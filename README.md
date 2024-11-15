@@ -64,7 +64,7 @@ A board to simulate a elevator with 3 floors.
 - 3 buttons for the inside of the elevator
 - 4-8 LEDs in a box to represent the elevator at each floor
 
-*Design currently under development.
+*Design currently under development.*
 
 ### 16x9 LED display
 
@@ -74,13 +74,13 @@ Contains a 16x9 Charlieplexed LED matrix to present a very simple display driven
 - 4 way button joystick
 - 2 additional buttons for interaction
 
-*Design currently under development.
+*Design currently under development.*
 
 ### Breakout & passthrough board
 
 This board can either be attach to the driver board or between the driver board and another board. It provides the IO passthrough but also a header to allow you to attach dupont leads. A small breadboard is also attached to let you add components not found on the fixed function boards.
 
-*Design currently under development.
+*Design currently under development.*
 
 ### Multiple sensor board
 
@@ -94,7 +94,7 @@ Sensor list
 - Motion
 - Pressure
 
-*Design currently under development.
+*Design currently under development.*
 
 ## Demo code
 
