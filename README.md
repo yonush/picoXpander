@@ -1,6 +1,6 @@
 # Tangible Learning for IoT and Automation ... in a Lunchbox - the picoXpander
 
-This repo is the design files and sample code for the picoXpander kit. It is kit that leverages the Raspberry pico boards (RP2040 & RP2350) as a controller along with various IO boards the conenct up using a short ribbon cable. The goal of this kit was to use simple technolgy to make an interesting electronics kit for teaching at a very afforable price. The focus of the learning is on the programming and understanding logic. This reduces the reliance on the connection and wiring up of individual components which take more time to get right. 
+This repo is the design files and sample code for the picoXpander kit. It is kit that leverages the Raspberry pico boards (RP2040 & RP2350) as a controller along with various IO boards the connect up using a short ribbon cable. The goal of this kit was to use simple technology to make an interesting electronics kit for teaching at a very affordable price. The focus of the learning is on the programming and understanding logic. This reduces the reliance on the connection and wiring up of individual components which take more time to get right. 
 
 The Lunch box idea idea was create boards that are small enough to fit into a 1L box (about 160L x 113W x 90H mm in size), including the cable. This meant it was easy to keep the kit together and carry around. The 1L box has enough room to fit about 6-7 boards and the USB cable.
 
@@ -8,7 +8,7 @@ The Lunch box idea idea was create boards that are small enough to fit into a 1L
 
 The kit IO layout was arranged to match the [picoPLC](https://github.com/yonush/PicoPLC) arrangement so that you can write your applications using [OpenPLC](https://autonomylogic.com/). This does not mean you cant remap them when using CircuitPython, Micropython or C/C++.
 
-Pinout used by the piocXpander and picoPLC
+Pinout used by the picoXpander and picoPLC
 
 ![pinout](images/pinout.png)
 
@@ -22,7 +22,7 @@ There are seven boards identified for the kit with three of them already designe
 - :white_large_square: Three floor elevator
 - :white_large_square: 16x8 LED display
 - :white_large_square: Breakout & passthrough board
-- :white_large_square: Multiple snesor board
+- :white_large_square: Multiple sensor board
 
 
 ### The picoXpander driver board
@@ -39,7 +39,7 @@ This board contains a socket for the Pico which also provision for direct solder
 
 ### Traffic crossing
 
-This simulates 4 way crossing with a pedestian light for two of the roads. 
+This simulates 4 way crossing with a pedestrian light for two of the roads. 
 
 - It is 130x88mm in size
 - Three buttons to interact with the lights
@@ -50,7 +50,7 @@ This simulates 4 way crossing with a pedestian light for two of the roads.
 
 ### 8bit Digital IO board
 
-A simple board ther maps against the 8 digital inputs and 8 digital outputs. The labels of the buttons are not tied to a specific function but can be used as identifiers.
+A simple board the maps against the 8 digital inputs and 8 digital outputs. The labels of the buttons are not tied to a specific function but can be used as identifiers.
 
 
 ![8bitIO](images/digiIO.png)
@@ -60,9 +60,9 @@ A simple board ther maps against the 8 digital inputs and 8 digital outputs. The
 A board to simulate a elevator with 3 floors.
 
 - 1 button for each floor to call the elevator 
-- 2 leds to indicate elevator travelling up or down
+- 2 LEDs to indicate elevator traveling up or down
 - 3 buttons for the inside of the elevator
-- 4-8 LEDS in a box to represent the elevator at each floor
+- 4-8 LEDs in a box to represent the elevator at each floor
 
 *Design currently under development.
 
@@ -78,19 +78,19 @@ Contains a 16x9 Charlieplexed LED matrix to present a very simple display driven
 
 ### Breakout & passthrough board
 
-This board can either be attach to the driver board or between the driver baord and another board. It provides the IO passthrough but also a header to allow you to attach dupont leads. A small breadboard is also attached to let you add components not found on the fixed function boards.
+This board can either be attach to the driver board or between the driver board and another board. It provides the IO passthrough but also a header to allow you to attach dupont leads. A small breadboard is also attached to let you add components not found on the fixed function boards.
 
 *Design currently under development.
 
 ### Multiple sensor board
 
-This baord contains several common sensors and a a couple of RGB LEDS
+This board contains several common sensors and a a couple of RGB LEDs
 
 Sensor list
 - Light sensor
 - Sound
 - Temperature
-- Humidty
+- Humidity
 - Motion
 - Pressure
 
@@ -98,6 +98,6 @@ Sensor list
 
 ## Demo code
 
-*Under developemnt*
+*Under development*
 
 -end-of-file-
