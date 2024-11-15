@@ -1,0 +1,8869 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "a82e9316-ffb7-4dc0-873b-4e707b2a0d0e")
+	(paper "A3")
+	(title_block
+		(title "PicoXpander - Traffic Light Board")
+	)
+	(lib_symbols
+		(symbol "Connector_Generic:Conn_01x30"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 38.1 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x30"
+				(at 0 -40.64 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x30, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x30_1_1"
+				(rectangle
+					(start -1.27 -37.973)
+					(end 0 -38.227)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -35.433)
+					(end 0 -35.687)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -32.893)
+					(end 0 -33.147)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -30.353)
+					(end 0 -30.607)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -27.813)
+					(end 0 -28.067)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -25.273)
+					(end 0 -25.527)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -22.733)
+					(end 0 -22.987)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -20.193)
+					(end 0 -20.447)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -17.653)
+					(end 0 -17.907)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -15.113)
+					(end 0 -15.367)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -12.573)
+					(end 0 -12.827)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -10.033)
+					(end 0 -10.287)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -7.493)
+					(end 0 -7.747)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 7.747)
+					(end 0 7.493)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 10.287)
+					(end 0 10.033)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 12.827)
+					(end 0 12.573)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 15.367)
+					(end 0 15.113)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 17.907)
+					(end 0 17.653)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 20.447)
+					(end 0 20.193)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 22.987)
+					(end 0 22.733)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 25.527)
+					(end 0 25.273)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 28.067)
+					(end 0 27.813)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 30.607)
+					(end 0 30.353)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 33.147)
+					(end 0 32.893)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 35.687)
+					(end 0 35.433)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 36.83)
+					(end 1.27 -39.37)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 35.56 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 12.7 0)
+					(length 3.81)
+					(name "Pin_10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 10.16 0)
+					(length 3.81)
+					(name "Pin_11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 7.62 0)
+					(length 3.81)
+					(name "Pin_12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 5.08 0)
+					(length 3.81)
+					(name "Pin_13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -7.62 0)
+					(length 3.81)
+					(name "Pin_18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -10.16 0)
+					(length 3.81)
+					(name "Pin_19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 33.02 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -12.7 0)
+					(length 3.81)
+					(name "Pin_20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -15.24 0)
+					(length 3.81)
+					(name "Pin_21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -17.78 0)
+					(length 3.81)
+					(name "Pin_22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -20.32 0)
+					(length 3.81)
+					(name "Pin_23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -22.86 0)
+					(length 3.81)
+					(name "Pin_24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -25.4 0)
+					(length 3.81)
+					(name "Pin_25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -27.94 0)
+					(length 3.81)
+					(name "Pin_26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -30.48 0)
+					(length 3.81)
+					(name "Pin_27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -33.02 0)
+					(length 3.81)
+					(name "Pin_28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -35.56 0)
+					(length 3.81)
+					(name "Pin_29"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "29"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 30.48 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -38.1 0)
+					(length 3.81)
+					(name "Pin_30"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "30"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 27.94 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 25.4 0)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 22.86 0)
+					(length 3.81)
+					(name "Pin_6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 20.32 0)
+					(length 3.81)
+					(name "Pin_7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 17.78 0)
+					(length 3.81)
+					(name "Pin_8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 15.24 0)
+					(length 3.81)
+					(name "Pin_9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:LED_Filled"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED_Filled"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode, filled shape"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_Filled_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_Filled_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R_US"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_US"
+				(at -2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 1.016 -0.254 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, US symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_US_0_1"
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_US_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Switch:SW_Push"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:+3V3"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0) hide
+					(name "+3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:GNDREF"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GNDREF"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GNDREF_0_1"
+				(polyline
+					(pts
+						(xy -0.635 -1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.127 -2.54) (xy 0.127 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GNDREF_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0) hide
+					(name "GNDREF"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 374.65 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "028889a4-87c5-4d11-99b7-ee2904437e9c")
+	)
+	(junction
+		(at 100.33 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "07579961-b84a-4a8b-b258-6a462b240ba0")
+	)
+	(junction
+		(at 330.2 223.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1d3c6516-2a58-4e00-b030-73cac8760365")
+	)
+	(junction
+		(at 40.64 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "22dfbfb2-6567-47cc-bad0-2a3ddaf121a8")
+	)
+	(junction
+		(at 320.04 223.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "350e9075-bd32-4373-b1b1-681d98a44107")
+	)
+	(junction
+		(at 105.41 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "38f37aae-82bf-4ad6-8f81-092af4d4cedf")
+	)
+	(junction
+		(at 102.87 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5f59f354-47bd-4dac-8d72-506f5c6810e0")
+	)
+	(junction
+		(at 113.03 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5fe24a74-63d7-4dd9-8896-f3e7d0c165fa")
+	)
+	(junction
+		(at 320.04 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5fe60429-3029-45cd-9149-256f3e447bdb")
+	)
+	(junction
+		(at 374.65 223.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6c4d2004-a505-406b-a16e-94e0754beda6")
+	)
+	(junction
+		(at 307.34 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "939ce34a-9457-4a6f-afdf-464a92d31aef")
+	)
+	(junction
+		(at 54.61 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9d7b91b0-f59b-41bc-9000-7f828474671b")
+	)
+	(junction
+		(at 307.34 223.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b7018490-5153-45cd-bdea-16b7ef16906e")
+	)
+	(junction
+		(at 118.11 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cfde0249-cb81-483c-87a6-229a0a3d566d")
+	)
+	(junction
+		(at 40.64 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "edab1638-aa02-4167-b45c-0b296cfb3ba7")
+	)
+	(junction
+		(at 330.2 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ee4946a0-0d89-4e32-8904-183d748bd256")
+	)
+	(junction
+		(at 115.57 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f794f069-5bf5-4673-acee-95ccc4d86317")
+	)
+	(wire
+		(pts
+			(xy 95.25 29.21) (xy 349.25 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "003cce64-adbf-4033-8044-181100a656e0")
+	)
+	(wire
+		(pts
+			(xy 374.65 219.71) (xy 374.65 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "005254ac-3106-4d9e-8545-2185a32a8b5d")
+	)
+	(wire
+		(pts
+			(xy 54.61 53.34) (xy 54.61 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00d46456-bc2f-413e-9ded-620f19b66a79")
+	)
+	(wire
+		(pts
+			(xy 274.32 224.79) (xy 274.32 227.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "017be286-f02e-46ec-a3a5-c9c7191c190f")
+	)
+	(wire
+		(pts
+			(xy 38.1 95.25) (xy 102.87 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "039add15-bd92-43aa-9996-0f7d62529b12")
+	)
+	(wire
+		(pts
+			(xy 330.2 238.76) (xy 330.2 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07c1a80b-ffe7-4844-9980-bfcea3aaeac7")
+	)
+	(wire
+		(pts
+			(xy 330.2 208.28) (xy 330.2 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "090469eb-5c96-46e5-b6de-b5e2d486beab")
+	)
+	(wire
+		(pts
+			(xy 274.32 127) (xy 274.32 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a79fd8c-2ac4-4668-84f8-8894c61de4da")
+	)
+	(wire
+		(pts
+			(xy 274.32 74.93) (xy 274.32 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c1888e4-5ef9-4008-b1e3-080bb5ac8387")
+	)
+	(wire
+		(pts
+			(xy 260.35 186.69) (xy 251.46 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c9e73fe-111e-4f1c-bc8a-fddb9ec54ad0")
+	)
+	(wire
+		(pts
+			(xy 54.61 60.96) (xy 54.61 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d09c99e-2290-4b13-9ac1-7ecb3b800f48")
+	)
+	(wire
+		(pts
+			(xy 102.87 95.25) (xy 158.75 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "134c6968-52a8-496d-912f-997cb02fe711")
+	)
+	(wire
+		(pts
+			(xy 351.79 107.95) (xy 374.65 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15268163-0197-4bff-a594-d7065284efcd")
+	)
+	(wire
+		(pts
+			(xy 254 207.01) (xy 254 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15c777d2-ad1e-4007-b05d-3db10bc4c14f")
+	)
+	(wire
+		(pts
+			(xy 374.65 123.19) (xy 374.65 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "163fe073-7cde-48d3-86aa-f53b6c55d9a1")
+	)
+	(wire
+		(pts
+			(xy 257.81 74.93) (xy 260.35 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ab9d982-bcd0-4de2-bfd9-6101327d58a7")
+	)
+	(polyline
+		(pts
+			(xy 278.13 81.28) (xy 278.13 121.92)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "1b338026-833f-4b7e-9b15-8e28c699b0d3")
+	)
+	(wire
+		(pts
+			(xy 267.97 74.93) (xy 274.32 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c4da25e-79e7-445d-896c-8366466bd7ce")
+	)
+	(wire
+		(pts
+			(xy 297.18 223.52) (xy 307.34 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d370d83-683e-4082-b40f-6b6155e86f36")
+	)
+	(wire
+		(pts
+			(xy 158.75 224.79) (xy 118.11 224.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1de414c8-b357-4371-99f7-2a103b128b78")
+	)
+	(wire
+		(pts
+			(xy 38.1 92.71) (xy 105.41 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21659c01-3f5a-435d-9f3c-8a87169916d6")
+	)
+	(wire
+		(pts
+			(xy 317.5 217.17) (xy 320.04 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22212fd9-478a-455a-8a1e-6f6be5934e27")
+	)
+	(wire
+		(pts
+			(xy 166.37 224.79) (xy 172.72 224.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23e80974-c9da-4ba2-b698-7af4363a0283")
+	)
+	(wire
+		(pts
+			(xy 105.41 82.55) (xy 105.41 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2401d654-07c6-4f77-9b50-b8ba4aad92fc")
+	)
+	(wire
+		(pts
+			(xy 172.72 207.01) (xy 172.72 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25d0ab69-70aa-4675-b458-c79e65e11fd0")
+	)
+	(wire
+		(pts
+			(xy 95.25 77.47) (xy 38.1 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27291e97-d533-40e1-813e-a34fc8736953")
+	)
+	(wire
+		(pts
+			(xy 40.64 34.29) (xy 54.61 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2751f904-088e-42dd-a3a7-01710ec64ba4")
+	)
+	(wire
+		(pts
+			(xy 172.72 127) (xy 172.72 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29dff9cd-179f-4608-92f6-3518b1fd9d52")
+	)
+	(wire
+		(pts
+			(xy 320.04 114.3) (xy 317.5 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2be12b39-3c51-4380-bd2c-54513804661d")
+	)
+	(wire
+		(pts
+			(xy 158.75 207.01) (xy 115.57 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c8884d5-4921-477d-b1c0-b5e84bbcff17")
+	)
+	(wire
+		(pts
+			(xy 349.25 29.21) (xy 349.25 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30d77841-3014-4835-9eb3-4a3f10d5fff5")
+	)
+	(wire
+		(pts
+			(xy 172.72 106.68) (xy 172.72 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37e4a900-2e22-4463-8962-0028eff21354")
+	)
+	(wire
+		(pts
+			(xy 172.72 186.69) (xy 172.72 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38dea461-de05-419a-bf1f-8d789b1cc12c")
+	)
+	(wire
+		(pts
+			(xy 252.73 113.03) (xy 260.35 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39bd3732-7a91-4513-980c-8a23c4f1e557")
+	)
+	(wire
+		(pts
+			(xy 102.87 80.01) (xy 102.87 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b6b3e11-db58-46b1-9391-fedb38177eb0")
+	)
+	(wire
+		(pts
+			(xy 105.41 39.37) (xy 297.18 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b70c939-85a6-4cbc-895e-a46f98a327a9")
+	)
+	(wire
+		(pts
+			(xy 172.72 88.9) (xy 172.72 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b716be4-627e-42f3-8203-f2a15c9cfb32")
+	)
+	(wire
+		(pts
+			(xy 40.64 30.48) (xy 40.64 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ddaf6fa-c830-46ae-8f85-3c423035e181")
+	)
+	(wire
+		(pts
+			(xy 330.2 107.95) (xy 330.2 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3df01970-42fe-4757-9c4b-0a79cd96aa6b")
+	)
+	(wire
+		(pts
+			(xy 38.1 72.39) (xy 48.26 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42cab691-402f-48fd-b051-1fd2dba85f28")
+	)
+	(wire
+		(pts
+			(xy 374.65 107.95) (xy 374.65 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4572d5b8-67e2-4344-ad1a-170e047bf749")
+	)
+	(wire
+		(pts
+			(xy 307.34 217.17) (xy 307.34 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "462003fe-7798-4f87-ae18-16a25afddc22")
+	)
+	(wire
+		(pts
+			(xy 330.2 218.44) (xy 330.2 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "478a318c-10c0-456c-ae10-ecc0147255f1")
+	)
+	(wire
+		(pts
+			(xy 152.4 74.93) (xy 158.75 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "482c0094-5f41-4f28-ad3c-310cd6d9cc60")
+	)
+	(wire
+		(pts
+			(xy 38.1 97.79) (xy 100.33 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48ea9ddd-6101-4e70-b83e-99ab794d6497")
+	)
+	(wire
+		(pts
+			(xy 297.18 186.69) (xy 297.18 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48efca97-549d-4300-bd73-61380712f1e3")
+	)
+	(wire
+		(pts
+			(xy 92.71 26.67) (xy 351.79 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4908eab1-b010-4f1e-b80b-db6610a44925")
+	)
+	(wire
+		(pts
+			(xy 320.04 229.87) (xy 317.5 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49254c83-a3fd-480e-bc91-ffe07bfdaa8b")
+	)
+	(wire
+		(pts
+			(xy 374.65 238.76) (xy 374.65 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e0413e6-cb7d-4feb-9047-ca38b96aef9e")
+	)
+	(wire
+		(pts
+			(xy 341.63 36.83) (xy 341.63 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53805e51-263e-46cb-95e8-5bbc86c54d55")
+	)
+	(wire
+		(pts
+			(xy 172.72 218.44) (xy 172.72 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56718e3f-2b4d-41f3-97ca-3834b3a9160d")
+	)
+	(wire
+		(pts
+			(xy 374.65 104.14) (xy 374.65 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56be54b6-4ec3-4326-8aa3-78afab70208c")
+	)
+	(polyline
+		(pts
+			(xy 306.07 97.79) (xy 321.31 97.79)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "58ca8e5f-43e1-42fc-9f90-a04dd9f270f9")
+	)
+	(wire
+		(pts
+			(xy 309.88 101.6) (xy 307.34 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ad0b3bc-32d1-4ac8-b1ed-c01f12a3ee4b")
+	)
+	(wire
+		(pts
+			(xy 320.04 223.52) (xy 320.04 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5dec5fa1-7ac2-46b0-b0fc-223201717922")
+	)
+	(wire
+		(pts
+			(xy 255.27 95.25) (xy 255.27 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62313d18-1e20-4235-88f3-4570367afde6")
+	)
+	(wire
+		(pts
+			(xy 274.32 88.9) (xy 274.32 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "637d65fc-ea61-489e-aac0-1f08ad8da573")
+	)
+	(wire
+		(pts
+			(xy 374.65 92.71) (xy 374.65 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64ab91af-df97-47c4-9328-a54717ee98b8")
+	)
+	(wire
+		(pts
+			(xy 95.25 77.47) (xy 95.25 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65c111ba-c729-4968-8089-f16a2a5af03d")
+	)
+	(wire
+		(pts
+			(xy 274.32 113.03) (xy 274.32 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6660c810-8ffc-4646-ae71-b52fae675833")
+	)
+	(wire
+		(pts
+			(xy 118.11 52.07) (xy 252.73 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67ce40dc-dfde-4542-ab9a-490f55e706f4")
+	)
+	(wire
+		(pts
+			(xy 115.57 49.53) (xy 115.57 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67ded230-ac3b-43cf-a452-7ff9a4ab6c5c")
+	)
+	(wire
+		(pts
+			(xy 105.41 92.71) (xy 105.41 266.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69e023c5-04bf-48ef-9391-19138c3cd56d")
+	)
+	(wire
+		(pts
+			(xy 320.04 217.17) (xy 320.04 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b557d04-67b3-4806-8294-af5778ed3e29")
+	)
+	(wire
+		(pts
+			(xy 274.32 186.69) (xy 274.32 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c9fab53-f4a2-4eb7-b41a-6d2036f33b3c")
+	)
+	(polyline
+		(pts
+			(xy 323.85 215.9) (xy 323.85 231.14)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "6de7691a-1b26-468f-ae0b-b59eda3eaf35")
+	)
+	(wire
+		(pts
+			(xy 113.03 46.99) (xy 113.03 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f54843e-0857-465a-b44d-c63a95ffe4f5")
+	)
+	(polyline
+		(pts
+			(xy 303.53 215.9) (xy 303.53 231.14)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "70636e22-e1a1-4e1f-a38a-22477304a5a5")
+	)
+	(wire
+		(pts
+			(xy 54.61 36.83) (xy 54.61 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70a58425-11f4-4790-9cfb-b91d2e864613")
+	)
+	(wire
+		(pts
+			(xy 166.37 186.69) (xy 172.72 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70d7db02-2e29-4b82-a768-2d6a1bb51457")
+	)
+	(wire
+		(pts
+			(xy 172.72 238.76) (xy 172.72 234.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71185007-e989-45a3-8017-fe86d15e7b75")
+	)
+	(polyline
+		(pts
+			(xy 306.07 233.68) (xy 321.31 233.68)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "716f0e15-2a15-4e24-bb2c-eaf35f8c79f4")
+	)
+	(wire
+		(pts
+			(xy 341.63 186.69) (xy 297.18 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "722c189a-0dab-41f6-bcbf-7f3f4a58ad8e")
+	)
+	(wire
+		(pts
+			(xy 38.1 82.55) (xy 105.41 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7573498c-a6b7-4753-9909-a5fde93360c7")
+	)
+	(wire
+		(pts
+			(xy 172.72 224.79) (xy 172.72 227.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75a4488d-d29d-46ec-b905-afaffe9a11bc")
+	)
+	(wire
+		(pts
+			(xy 320.04 107.95) (xy 330.2 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75aef45c-8bd1-498d-b61d-a0a4dfc1988e")
+	)
+	(wire
+		(pts
+			(xy 118.11 52.07) (xy 118.11 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77dd344c-029a-49c9-aa52-c42f9afd33be")
+	)
+	(polyline
+		(pts
+			(xy 168.91 193.04) (xy 168.91 233.68)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "787b023a-e988-46d1-91c8-70d4a19ebf33")
+	)
+	(wire
+		(pts
+			(xy 152.4 74.93) (xy 152.4 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78c8b5c1-f144-457a-a497-f660af4a5ae2")
+	)
+	(wire
+		(pts
+			(xy 118.11 85.09) (xy 118.11 224.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ad3e861-462b-474a-84f6-000be503c22e")
+	)
+	(wire
+		(pts
+			(xy 274.32 106.68) (xy 274.32 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7cfd8d35-7f8d-45d2-999c-63a8cd602544")
+	)
+	(wire
+		(pts
+			(xy 113.03 186.69) (xy 158.75 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d938e6f-7e4d-491f-8c1a-c30771dbf5fb")
+	)
+	(wire
+		(pts
+			(xy 351.79 107.95) (xy 351.79 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ee778e5-de7e-4c0d-9be0-42602e4bb87c")
+	)
+	(wire
+		(pts
+			(xy 374.65 223.52) (xy 374.65 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8060b8b8-ce1b-4aa5-9ba3-b5bd17659bda")
+	)
+	(wire
+		(pts
+			(xy 105.41 92.71) (xy 152.4 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8076a7db-8ac2-475c-98c6-3cc5745359b7")
+	)
+	(wire
+		(pts
+			(xy 172.72 113.03) (xy 172.72 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81fddf68-c332-4aa0-a53c-1367be0e2c8f")
+	)
+	(wire
+		(pts
+			(xy 330.2 92.71) (xy 330.2 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85d1c84a-1cdc-45b6-aae4-3f0f0a25ae68")
+	)
+	(polyline
+		(pts
+			(xy 306.07 213.36) (xy 321.31 213.36)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "886f8075-e8ed-429c-9862-10ffa8fe2a08")
+	)
+	(wire
+		(pts
+			(xy 115.57 87.63) (xy 115.57 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a54ed86-1523-4b2e-adc9-e557aeae2043")
+	)
+	(wire
+		(pts
+			(xy 172.72 200.66) (xy 172.72 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ab09483-daee-419c-977f-cf4d417056ff")
+	)
+	(wire
+		(pts
+			(xy 172.72 74.93) (xy 172.72 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cf9699f-57ff-45c5-8673-53921ab5a264")
+	)
+	(wire
+		(pts
+			(xy 307.34 107.95) (xy 307.34 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d6e7578-5a0e-4f3d-8874-3fba259e3d51")
+	)
+	(wire
+		(pts
+			(xy 158.75 113.03) (xy 152.4 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e1be54f-a80b-4400-a93c-26bf79bdfc80")
+	)
+	(wire
+		(pts
+			(xy 166.37 207.01) (xy 172.72 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91829242-3e13-408e-86a2-4ee35d90269c")
+	)
+	(wire
+		(pts
+			(xy 307.34 107.95) (xy 297.18 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92095aa6-0be2-4dbe-a05d-fba8540b1638")
+	)
+	(polyline
+		(pts
+			(xy 168.91 81.28) (xy 168.91 121.92)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "924efc5d-272b-4e66-acec-7abbfdb05e7f")
+	)
+	(wire
+		(pts
+			(xy 48.26 72.39) (xy 48.26 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93e71800-827a-4198-9139-20950a59ac1f")
+	)
+	(wire
+		(pts
+			(xy 274.32 95.25) (xy 274.32 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9686b30c-aae4-43f5-835d-874386d6a603")
+	)
+	(wire
+		(pts
+			(xy 105.41 266.7) (xy 251.46 266.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96a15b88-862a-4910-a5e0-e21d90befad3")
+	)
+	(wire
+		(pts
+			(xy 40.64 113.03) (xy 40.64 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a167f1e-2469-40ef-9279-4a2918d8c752")
+	)
+	(wire
+		(pts
+			(xy 166.37 113.03) (xy 172.72 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b6c8bf3-db15-4073-8fcc-60a2522fdbc4")
+	)
+	(polyline
+		(pts
+			(xy 270.51 193.04) (xy 270.51 233.68)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "a057c155-0802-46e7-9b3e-a5104135946e")
+	)
+	(wire
+		(pts
+			(xy 267.97 95.25) (xy 274.32 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a43ce8e3-1ce9-4014-85b0-c5bf1dffbf34")
+	)
+	(wire
+		(pts
+			(xy 267.97 113.03) (xy 274.32 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5882ca4-fb83-4967-bffc-8ab688ff4c9b")
+	)
+	(wire
+		(pts
+			(xy 40.64 110.49) (xy 40.64 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa58c5d2-e4b2-47d2-9be3-090e37fb2c11")
+	)
+	(wire
+		(pts
+			(xy 92.71 74.93) (xy 38.1 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab6358c5-d07b-453f-aafb-e52b6dcaae66")
+	)
+	(polyline
+		(pts
+			(xy 270.51 81.28) (xy 270.51 121.92)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "ac8a63e6-4793-4bd4-a13c-e3ed71500dc8")
+	)
+	(polyline
+		(pts
+			(xy 323.85 100.33) (xy 323.85 115.57)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "ae28ed94-c9aa-4860-9fa6-07ec6f936b6f")
+	)
+	(wire
+		(pts
+			(xy 320.04 101.6) (xy 320.04 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af0be1ef-738e-4bf7-b114-b9f29b11046d")
+	)
+	(wire
+		(pts
+			(xy 307.34 114.3) (xy 309.88 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0661e9c-33f2-4e33-8282-c901ef1c6ea5")
+	)
+	(wire
+		(pts
+			(xy 330.2 123.19) (xy 330.2 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b33772e9-6351-46a2-b0bc-a136980c51d4")
+	)
+	(wire
+		(pts
+			(xy 307.34 223.52) (xy 307.34 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3a56e5e-76b9-465b-928c-e49bd744ccad")
+	)
+	(wire
+		(pts
+			(xy 254 207.01) (xy 260.35 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3ec163f-ee0f-42ef-ac82-fd9cd5c41ffa")
+	)
+	(wire
+		(pts
+			(xy 40.64 39.37) (xy 40.64 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b40928c2-ce4e-4506-ab7e-21ab875278be")
+	)
+	(wire
+		(pts
+			(xy 297.18 39.37) (xy 297.18 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4499992-8af4-48a8-90c6-46db2b1f8513")
+	)
+	(polyline
+		(pts
+			(xy 176.53 81.28) (xy 176.53 121.92)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "b65bed9d-3264-42a3-b053-62ac51a32018")
+	)
+	(wire
+		(pts
+			(xy 260.35 95.25) (xy 255.27 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7fd1ef4-9945-48e9-9f8b-b8bbba13eba7")
+	)
+	(wire
+		(pts
+			(xy 307.34 101.6) (xy 307.34 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b94abdf3-7b94-4e65-903a-9387e384793b")
+	)
+	(wire
+		(pts
+			(xy 320.04 107.95) (xy 320.04 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b97e87fa-3961-4b1c-9920-fb904618ceb2")
+	)
+	(wire
+		(pts
+			(xy 267.97 207.01) (xy 274.32 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9c6d57b-6ed5-4707-95e2-4f0c2939f999")
+	)
+	(wire
+		(pts
+			(xy 48.26 50.8) (xy 54.61 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbbe385a-e2e2-4a29-b464-f2c9697a4f63")
+	)
+	(wire
+		(pts
+			(xy 100.33 271.78) (xy 256.54 271.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbcebc80-a64b-43c6-ab90-abc933b1c5a6")
+	)
+	(wire
+		(pts
+			(xy 267.97 224.79) (xy 274.32 224.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be6053b4-b803-4667-89f8-d0c3ecb94373")
+	)
+	(wire
+		(pts
+			(xy 100.33 97.79) (xy 152.4 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "beb654c0-c12f-447b-a1e4-c643be23acde")
+	)
+	(wire
+		(pts
+			(xy 92.71 74.93) (xy 92.71 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf596536-5f29-4580-af47-dddb1d644196")
+	)
+	(wire
+		(pts
+			(xy 349.25 223.52) (xy 374.65 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c068b8ef-0a62-481b-887e-80091639bb1f")
+	)
+	(wire
+		(pts
+			(xy 330.2 223.52) (xy 330.2 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0acd47e-6aaa-4653-9ad8-bb425c4680e6")
+	)
+	(wire
+		(pts
+			(xy 251.46 186.69) (xy 251.46 266.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1ac627a-eab7-4918-94ce-fa0c002bff6a")
+	)
+	(wire
+		(pts
+			(xy 257.81 46.99) (xy 257.81 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c20ffda0-336c-425b-afb0-fd3d992ae346")
+	)
+	(wire
+		(pts
+			(xy 256.54 224.79) (xy 260.35 224.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c33fb959-1c65-4003-8159-09f271c14305")
+	)
+	(wire
+		(pts
+			(xy 38.1 90.17) (xy 113.03 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c440fb7f-4eb1-47c4-b9a4-8a7a46e1cf65")
+	)
+	(wire
+		(pts
+			(xy 172.72 95.25) (xy 172.72 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c785ccf3-5778-490c-8ebc-215b0f977b02")
+	)
+	(polyline
+		(pts
+			(xy 176.53 193.04) (xy 176.53 233.68)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "ca503de5-913d-4412-9e93-c8df7555f77d")
+	)
+	(wire
+		(pts
+			(xy 267.97 186.69) (xy 274.32 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb1de0a8-8b5c-49b2-9339-96d70fde8eba")
+	)
+	(wire
+		(pts
+			(xy 320.04 223.52) (xy 330.2 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbaede6f-e26e-45c7-bf21-b3fd24ff899f")
+	)
+	(wire
+		(pts
+			(xy 113.03 90.17) (xy 113.03 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc5a9b5b-a00c-4be1-ac59-8d39b1d17b68")
+	)
+	(wire
+		(pts
+			(xy 166.37 74.93) (xy 172.72 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cee69fc0-05fd-46d1-b0c5-2d5052492025")
+	)
+	(wire
+		(pts
+			(xy 38.1 87.63) (xy 115.57 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf391b5a-349e-4d7e-a186-29961a8709c6")
+	)
+	(polyline
+		(pts
+			(xy 303.53 100.33) (xy 303.53 115.57)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "cf82e655-689a-4f96-ad4c-4dae1c2b928c")
+	)
+	(wire
+		(pts
+			(xy 274.32 200.66) (xy 274.32 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfe60493-7f41-4482-82ca-0ec1894cdd66")
+	)
+	(wire
+		(pts
+			(xy 38.1 113.03) (xy 40.64 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d352619c-9209-4f21-bbd0-118afc6db619")
+	)
+	(wire
+		(pts
+			(xy 54.61 46.99) (xy 54.61 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7ced4cb-f80c-48c3-8b7d-a355814eb0d7")
+	)
+	(wire
+		(pts
+			(xy 100.33 97.79) (xy 100.33 271.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d83cea99-25bc-4d11-9bb8-1d2394f65615")
+	)
+	(wire
+		(pts
+			(xy 113.03 46.99) (xy 257.81 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d93f980c-af6e-4662-ae04-25c304e4ca78")
+	)
+	(wire
+		(pts
+			(xy 330.2 102.87) (xy 330.2 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9f5102f-7099-4500-9d5b-ef6303fe6419")
+	)
+	(wire
+		(pts
+			(xy 317.5 101.6) (xy 320.04 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc23e95b-a5ef-43fa-acbe-49cc4fc0f3b5")
+	)
+	(wire
+		(pts
+			(xy 256.54 224.79) (xy 256.54 271.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd4b9ac3-c334-4785-9060-85c1455cf993")
+	)
+	(wire
+		(pts
+			(xy 38.1 39.37) (xy 40.64 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e231f37e-946b-411c-8958-e202f3608f9c")
+	)
+	(wire
+		(pts
+			(xy 102.87 269.24) (xy 254 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e245922c-9f36-42b3-a4a4-033cdd15c5d6")
+	)
+	(polyline
+		(pts
+			(xy 278.13 193.04) (xy 278.13 233.68)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "e251726e-af56-4fe5-8a0f-bfa73191d7f1")
+	)
+	(wire
+		(pts
+			(xy 274.32 218.44) (xy 274.32 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3504fdf-ad4b-45d2-852a-65e8759f0ace")
+	)
+	(wire
+		(pts
+			(xy 115.57 49.53) (xy 255.27 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e354ebfe-3a2c-4080-9480-5e20db87c707")
+	)
+	(wire
+		(pts
+			(xy 374.65 208.28) (xy 374.65 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7f72cee-dae6-4e92-90c8-49237798d280")
+	)
+	(wire
+		(pts
+			(xy 252.73 52.07) (xy 252.73 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e86e471c-faab-4dde-b17a-9224d1b3bf22")
+	)
+	(wire
+		(pts
+			(xy 307.34 229.87) (xy 309.88 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e992c0a7-a7f1-4250-acd5-1b43f12d342a")
+	)
+	(wire
+		(pts
+			(xy 166.37 95.25) (xy 172.72 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea417c33-35d1-4371-a4af-a9e70ff7207f")
+	)
+	(wire
+		(pts
+			(xy 102.87 36.83) (xy 341.63 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed8c441c-91b6-4c32-a5a7-fec10cb66f43")
+	)
+	(wire
+		(pts
+			(xy 274.32 207.01) (xy 274.32 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eefc4a16-8720-44ff-a662-75a62b6ec78d")
+	)
+	(wire
+		(pts
+			(xy 309.88 217.17) (xy 307.34 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef12800d-443c-47f7-9a2a-bffca787485c")
+	)
+	(wire
+		(pts
+			(xy 152.4 113.03) (xy 152.4 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0b7b182-d3c0-4584-9f1d-b57666946488")
+	)
+	(wire
+		(pts
+			(xy 38.1 85.09) (xy 118.11 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2fd9599-489b-4859-a166-681bee723ba2")
+	)
+	(wire
+		(pts
+			(xy 102.87 95.25) (xy 102.87 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f39bdfcc-0cee-4f21-8474-95e75c3001ed")
+	)
+	(wire
+		(pts
+			(xy 38.1 110.49) (xy 40.64 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6103d41-370c-43ab-b1ef-7dbf68220702")
+	)
+	(polyline
+		(pts
+			(xy 306.07 118.11) (xy 321.31 118.11)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "f74233bb-71dc-4cc4-b151-c358afb4c2be")
+	)
+	(wire
+		(pts
+			(xy 38.1 80.01) (xy 102.87 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb514db9-172e-47b5-88e3-d0250ada12ec")
+	)
+	(wire
+		(pts
+			(xy 274.32 238.76) (xy 274.32 234.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff4b59e5-ba2b-4fce-acd8-63fcab1fce2d")
+	)
+	(rectangle
+		(start 220.98 114.3)
+		(end 226.06 88.9)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 0)
+		)
+		(uuid 02e15cd3-a4de-49e7-b168-51b062009c3a)
+	)
+	(rectangle
+		(start 251.46 158.75)
+		(end 261.62 160.02)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 0)
+		)
+		(uuid 0bb20519-df48-46b2-838e-428fd2c0e787)
+	)
+	(rectangle
+		(start 261.62 176.53)
+		(end 287.02 181.61)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 0)
+		)
+		(uuid 119b658e-c60c-47c7-9a20-1165e81bb310)
+	)
+	(rectangle
+		(start 241.3 114.3)
+		(end 246.38 88.9)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 0)
+		)
+		(uuid 152b768c-3d8e-4423-a119-e5a03a999ef1)
+	)
+	(rectangle
+		(start 246.38 55.88)
+		(end 246.38 127)
+		(stroke
+			(width 1)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 16a30dd0-b299-483d-acf2-e3aba6601b6c)
+	)
+	(rectangle
+		(start 255.27 181.61)
+		(end 326.39 181.61)
+		(stroke
+			(width 1)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 191d1cef-1267-409d-bbb3-7911c9546996)
+	)
+	(rectangle
+		(start 261.62 146.05)
+		(end 287.02 151.13)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 0)
+		)
+		(uuid 1f46a084-6348-4fe6-b0db-deb2d39ecd4a)
+	)
+	(rectangle
+		(start 194.31 139.7)
+		(end 195.58 158.75)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 0)
+		)
+		(uuid 26d1b8c4-a319-4410-a288-85d94b03ae8b)
+	)
+	(rectangle
+		(start 224.79 130.81)
+		(end 223.52 120.65)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 0)
+		)
+		(uuid 26f6854c-b754-4c6f-8a42-0ea9a0143e99)
+	)
+	(rectangle
+		(start 223.52 60.96)
+		(end 224.79 55.88)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 0)
+		)
+		(uuid 2cad574c-8e18-41d1-903a-98dfb8a74c18)
+	)
+	(rectangle
+		(start 120.65 160.02)
+		(end 127 158.75)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 0)
+		)
+		(uuid 2fb12ecd-9944-445f-8288-269532f004dd)
+	)
+	(rectangle
+		(start 130.81 160.02)
+		(end 149.86 158.75)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 0)
+		)
+		(uuid 33396566-0e5b-4bb8-98b9-50a37e5aa01c)
+	)
+	(arc
+		(start 176.53 121.92)
+		(mid 172.72 125.5075)
+		(end 168.91 121.92)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 341ab000-a4cb-4f6b-a3a2-a95bcfbb02a5)
+	)
+	(arc
+		(start 321.31 97.79)
+		(mid 323.1061 98.5339)
+		(end 323.85 100.33)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 378c93fb-d266-4473-9807-516c39000e33)
+	)
+	(arc
+		(start 323.85 115.57)
+		(mid 323.1061 117.3661)
+		(end 321.31 118.11)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 39caf20b-75ae-4558-958c-3d530d4a78d9)
+	)
+	(rectangle
+		(start 231.14 114.3)
+		(end 236.22 88.9)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 0)
+		)
+		(uuid 3e5916b0-83a3-4b46-9eb6-017da468bde7)
+	)
+	(arc
+		(start 323.85 231.14)
+		(mid 323.1061 232.9361)
+		(end 321.31 233.68)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 3ee98933-6385-411f-9384-4edbcf761356)
+	)
+	(arc
+		(start 278.13 121.92)
+		(mid 274.32 125.5075)
+		(end 270.51 121.92)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 481976e8-d435-44fc-a329-425106854ead)
+	)
+	(rectangle
+		(start 223.52 205.74)
+		(end 224.79 186.69)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 0)
+		)
+		(uuid 4936e101-df9e-4a59-ae2b-6a614ed53415)
+	)
+	(arc
+		(start 270.51 81.28)
+		(mid 274.32 77.6829)
+		(end 278.13 81.28)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 4b88ab04-2019-4b60-847b-e6a97463bd3b)
+	)
+	(rectangle
+		(start 223.52 251.46)
+		(end 224.79 232.41)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 0)
+		)
+		(uuid 4bba4c66-0f6c-406b-a1ea-caeee3580b65)
+	)
+	(arc
+		(start 168.91 193.04)
+		(mid 172.72 189.4429)
+		(end 176.53 193.04)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 542974a4-a3b2-40d0-b847-bed218a8f72c)
+	)
+	(rectangle
+		(start 223.52 261.62)
+		(end 224.79 255.27)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 0)
+		)
+		(uuid 569da58d-ae1d-41b5-ae2b-2d12a47284ac)
+	)
+	(arc
+		(start 270.51 193.04)
+		(mid 274.32 189.4429)
+		(end 278.13 193.04)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 5defe057-4234-4aa3-8b4c-b3879b8ec07f)
+	)
+	(rectangle
+		(start 325.12 160.02)
+		(end 320.04 158.75)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 0)
+		)
+		(uuid 5fee996b-8e6d-413a-ab93-d1647767a0f4)
+	)
+	(arc
+		(start 278.13 233.68)
+		(mid 274.32 237.2675)
+		(end 270.51 233.68)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 6c7024a2-d174-4a1c-8d26-ec481396aee8)
+	)
+	(rectangle
+		(start 255.27 135.89)
+		(end 326.39 135.89)
+		(stroke
+			(width 1)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 702a59e4-bb20-4d34-b5b5-868cc3ade073)
+	)
+	(arc
+		(start 200.66 127)
+		(mid 198.0739 133.3039)
+		(end 191.77 135.89)
+		(stroke
+			(width 1)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 770f086f-1c74-4a44-8443-d27d7125ef72)
+	)
+	(arc
+		(start 303.53 100.33)
+		(mid 304.2739 98.5339)
+		(end 306.07 97.79)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 7ca6ac7c-8c17-4f5d-b96a-69503f9e4220)
+	)
+	(rectangle
+		(start 261.62 156.21)
+		(end 287.02 161.29)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 0)
+		)
+		(uuid 7d38a867-6c37-499c-8ff2-ea47c6df2a6e)
+	)
+	(rectangle
+		(start 261.62 135.89)
+		(end 287.02 140.97)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 0)
+		)
+		(uuid 81e19a99-5b3b-44ad-b957-e2fc987cffb8)
+	)
+	(arc
+		(start 321.31 213.36)
+		(mid 323.1061 214.1039)
+		(end 323.85 215.9)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 85b4bc4e-328e-4089-85b6-fad5e946b8a3)
+	)
+	(rectangle
+		(start 120.65 181.61)
+		(end 191.77 181.61)
+		(stroke
+			(width 1)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 8668f508-00db-42a3-b7d6-16a92e52ebb6)
+	)
+	(rectangle
+		(start 200.66 190.5)
+		(end 200.66 260.35)
+		(stroke
+			(width 1)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 89036f4a-f0af-4ae7-84d7-2f1d371188c3)
+	)
+	(rectangle
+		(start 224.79 129.54)
+		(end 243.84 130.81)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 0)
+		)
+		(uuid 8f1ce79f-a55e-4314-b908-a079aa72316d)
+	)
+	(rectangle
+		(start 251.46 160.02)
+		(end 252.73 179.07)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 0)
+		)
+		(uuid 9b2609a7-4953-42db-b943-91e32bc74c62)
+	)
+	(arc
+		(start 306.07 118.11)
+		(mid 304.2739 117.3661)
+		(end 303.53 115.57)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 9f981088-7020-406a-8392-8bb629ffbdd9)
+	)
+	(rectangle
+		(start 200.66 88.9)
+		(end 205.74 114.3)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 0)
+		)
+		(uuid a0a77fa7-1387-4ce2-90bb-b0774574ce43)
+	)
+	(rectangle
+		(start 297.18 160.02)
+		(end 316.23 158.75)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 0)
+		)
+		(uuid a6bf8e39-f719-468e-9e7c-4684831b1eec)
+	)
+	(rectangle
+		(start 223.52 228.6)
+		(end 224.79 209.55)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 0)
+		)
+		(uuid a756b56d-327e-4bfa-91ac-e2de73b301ec)
+	)
+	(rectangle
+		(start 200.66 55.88)
+		(end 200.66 127)
+		(stroke
+			(width 1)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid a8958a81-0b14-4b09-b4f8-ecef6cb6f41f)
+	)
+	(rectangle
+		(start 223.52 83.82)
+		(end 224.79 64.77)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 0)
+		)
+		(uuid aa95ec16-9108-4735-9cb6-c9c12690e052)
+	)
+	(rectangle
+		(start 172.72 160.02)
+		(end 153.67 158.75)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 0)
+		)
+		(uuid b9c21e5d-0f1d-4118-8ee1-e35465a5f694)
+	)
+	(arc
+		(start 255.27 135.89)
+		(mid 248.9661 133.3039)
+		(end 246.38 127)
+		(stroke
+			(width 1)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid bf9c8460-35ef-4080-9f12-a5237d259744)
+	)
+	(rectangle
+		(start 204.47 186.69)
+		(end 223.52 187.96)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 0)
+		)
+		(uuid c332eb86-1c27-49b9-bf49-d485f3aedb0c)
+	)
+	(arc
+		(start 246.38 190.5)
+		(mid 248.9661 184.1961)
+		(end 255.27 181.61)
+		(stroke
+			(width 1)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid caea45ec-7ae8-4888-8cce-79b97e2ad318)
+	)
+	(rectangle
+		(start 120.65 135.89)
+		(end 191.77 135.89)
+		(stroke
+			(width 1)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid cf614c96-db7c-4287-ae5b-b5b7342086e1)
+	)
+	(arc
+		(start 303.53 215.9)
+		(mid 304.2739 214.1039)
+		(end 306.07 213.36)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid de8637e1-4667-45c5-93c4-da3863ff7dd6)
+	)
+	(rectangle
+		(start 195.58 160.02)
+		(end 176.53 158.75)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 0)
+		)
+		(uuid e4c80bd4-dbe7-42a8-9c59-31289337cfa4)
+	)
+	(rectangle
+		(start 261.62 166.37)
+		(end 287.02 171.45)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 0)
+		)
+		(uuid ed63444a-c2bd-457d-86fe-0be2ac5b064f)
+	)
+	(rectangle
+		(start 210.82 114.3)
+		(end 215.9 88.9)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 0)
+		)
+		(uuid f155447b-c817-4ec3-921f-4c92fcd5cbe2)
+	)
+	(rectangle
+		(start 246.38 190.5)
+		(end 246.38 260.35)
+		(stroke
+			(width 1)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid f15f4467-ff1a-4cbe-94e4-c25abd786975)
+	)
+	(arc
+		(start 191.65 181.61)
+		(mid 198.0142 184.171)
+		(end 200.66 190.5)
+		(stroke
+			(width 1)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid f34cad03-a4e7-43d7-9690-e5d00be6120a)
+	)
+	(arc
+		(start 176.53 233.68)
+		(mid 172.72 237.2675)
+		(end 168.91 233.68)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid f449fd44-9d52-4b96-97fa-868d78072bf3)
+	)
+	(arc
+		(start 306.07 233.68)
+		(mid 304.2739 232.9361)
+		(end 303.53 231.14)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid f46125a4-38d6-494d-8d4d-e03f31558e9c)
+	)
+	(arc
+		(start 168.91 81.28)
+		(mid 172.72 77.6829)
+		(end 176.53 81.28)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid ff0b54a1-f2b4-4b0a-8fb0-a4c5d975fd7f)
+	)
+	(text "GPIO13"
+		(exclude_from_sim no)
+		(at 22.86 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00d679cd-e1d0-46ee-9fea-90e40cc15e45")
+	)
+	(text "GPIO19"
+		(exclude_from_sim no)
+		(at 22.86 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "037064c8-72ab-452a-940a-d56fdf82acc3")
+	)
+	(text "GPIO0"
+		(exclude_from_sim no)
+		(at 22.86 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "051d3445-e597-4baf-8a0c-c232b83ce0c2")
+	)
+	(text "GPIO3"
+		(exclude_from_sim no)
+		(at 22.86 53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0784796f-e2a1-43f7-b355-a434d5979bac")
+	)
+	(text "GPIO17"
+		(exclude_from_sim no)
+		(at 22.86 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "126b6a9d-cfb9-43f1-ade7-4eb36344d6db")
+	)
+	(text "GPIO20"
+		(exclude_from_sim no)
+		(at 22.86 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "34925940-531f-4339-a3c5-f3e1e19ce1f4")
+	)
+	(text "GPIO21"
+		(exclude_from_sim no)
+		(at 22.86 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3d22a9c8-4d86-446b-a68f-1605b9cd7ce2")
+	)
+	(text "GPIO2"
+		(exclude_from_sim no)
+		(at 22.86 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4285ca4e-0085-433c-b363-2a505ed05f81")
+	)
+	(text "3V3"
+		(exclude_from_sim no)
+		(at 22.86 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "47c85a92-a40a-4d40-ab2a-8e5e75b56021")
+	)
+	(text "GPIO15"
+		(exclude_from_sim no)
+		(at 22.86 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4951d852-6147-4914-bffb-11784c052476")
+	)
+	(text "GPIO14"
+		(exclude_from_sim no)
+		(at 22.86 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4a7b5c99-3ed2-4469-9ff3-d629d0b074d6")
+	)
+	(text "Pedestrian"
+		(exclude_from_sim no)
+		(at 302.26 246.38 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.6)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "58d5bc79-1880-404d-954f-3c42f62b6c67")
+	)
+	(text "GPIO8"
+		(exclude_from_sim no)
+		(at 22.86 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "595ecf26-2af4-4877-b7ac-c3dee002efe1")
+	)
+	(text "GPIO12"
+		(exclude_from_sim no)
+		(at 22.86 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5f508cc7-e132-45f6-ac04-c3f7d86c7d68")
+	)
+	(text "GPIO16"
+		(exclude_from_sim no)
+		(at 22.86 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "62532c31-b701-4705-85dd-0fdf88ec1ad8")
+	)
+	(text "GPIO6"
+		(exclude_from_sim no)
+		(at 22.86 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "635255eb-305a-42ff-9484-7c3806b9aec5")
+	)
+	(text "GPIO7"
+		(exclude_from_sim no)
+		(at 22.86 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "665f8264-a214-4b0a-a00e-cb24c9dff2d0")
+	)
+	(text "GPIO27"
+		(exclude_from_sim no)
+		(at 22.86 106.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6ffc371f-a650-4218-be14-bf0b4329f927")
+	)
+	(text "GND"
+		(exclude_from_sim no)
+		(at 22.86 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "71bc483b-184d-4afe-b7dd-2e20a4d55de9")
+	)
+	(text "GPIO18"
+		(exclude_from_sim no)
+		(at 22.86 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "738e8bd0-cba7-4efc-bc70-897d084684cc")
+	)
+	(text "5V"
+		(exclude_from_sim no)
+		(at 22.86 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "963c87a0-8a54-471a-9000-a3031407b4ef")
+	)
+	(text "GPIO10"
+		(exclude_from_sim no)
+		(at 22.86 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "96b5fa03-fbda-40a5-8f3e-229fb4b62695")
+	)
+	(text "GPIO22"
+		(exclude_from_sim no)
+		(at 22.86 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9b26fe57-6ff8-4fc7-acf9-da138a4ba42f")
+	)
+	(text "GPIO9"
+		(exclude_from_sim no)
+		(at 22.86 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a54a601c-d839-4efe-b632-04034968a939")
+	)
+	(text "GPIO11"
+		(exclude_from_sim no)
+		(at 22.86 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c41754c9-c4ec-45d5-bfc1-bf9018129541")
+	)
+	(text "Pedestrian"
+		(exclude_from_sim no)
+		(at 302.26 130.81 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.6)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "cd599320-4568-4a3b-a398-3d167b3dcc10")
+	)
+	(text "GPIO1"
+		(exclude_from_sim no)
+		(at 22.86 48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e3241223-498f-4190-a110-ba8125fa91ab")
+	)
+	(text "GPIO4"
+		(exclude_from_sim no)
+		(at 22.86 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e6792bba-5516-44e3-b8ea-21de934e0085")
+	)
+	(text "GND"
+		(exclude_from_sim no)
+		(at 22.86 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "eb78c816-be73-47ea-83ee-54b28dd79892")
+	)
+	(text "GPIO28"
+		(exclude_from_sim no)
+		(at 22.86 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ee3ed857-0673-4bb9-9ba9-4be1e1f95271")
+	)
+	(text "GPIO26"
+		(exclude_from_sim no)
+		(at 22.86 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f5d3b3e3-2b39-4ee9-a5ee-c8e00843c74c")
+	)
+	(text "GPIO5"
+		(exclude_from_sim no)
+		(at 22.86 58.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fd9b3df1-b93a-4f33-980e-94e0dc8bfaa9")
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 264.16 113.03 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0560d4ab-ed86-4756-ba0c-2cb90844d2b8")
+		(property "Reference" "R10"
+			(at 264.16 107.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220Ω"
+			(at 264.16 110.4209 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 264.414 112.014 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 264.16 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 264.16 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "434a701e-7e14-4951-a63c-b48070e93403")
+		)
+		(pin "1"
+			(uuid "71833305-0a5d-47bc-be26-8c9c5e06a47b")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 162.56 207.01 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "05732bfb-1e18-4c91-9d45-a6b4d7124d00")
+		(property "Reference" "R6"
+			(at 162.56 201.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220Ω"
+			(at 162.56 204.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 162.814 205.994 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 162.56 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ace440af-25d1-4a58-9f21-8c85f3e96079")
+		)
+		(pin "1"
+			(uuid "e245662a-120d-4448-a2ea-6fe99de8b708")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 40.64 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0c0317fb-cfc6-4a75-8c7c-da443670e3de")
+		(property "Reference" "#PWR03"
+			(at 40.64 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 40.64 26.3469 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.64 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 40.64 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "665288a6-511c-471a-9477-7872336a44d2")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 264.16 186.69 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0c94058c-5226-413d-b8a5-234dc22b3aa8")
+		(property "Reference" "R11"
+			(at 264.16 189.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220Ω"
+			(at 264.16 191.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 264.414 185.674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 264.16 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 264.16 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "66e85ec6-988d-493c-85d4-5d1c61bd4f3b")
+		)
+		(pin "1"
+			(uuid "7fb94c80-a829-4350-af41-1ae9dd22dd83")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Filled")
+		(at 172.72 119.38 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "131eeac0-d533-4fc2-b918-2a8f4d3ea152")
+		(property "Reference" "LED3"
+			(at 179.07 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Green"
+			(at 177.8 121.92 90)
+			(effects
+				(font
+					(size 3 3)
+					(bold yes)
+					(color 0 175 0 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 172.72 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 172.72 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 172.72 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1b3b91c6-b9c0-4c5c-b65a-e21b4824e08e")
+		)
+		(pin "1"
+			(uuid "957fb799-e2f7-4332-baa0-be1c01877509")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "LED3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 330.2 232.41 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "14c28233-688f-4b4f-8434-9e50df830c1a")
+		(property "Reference" "R17"
+			(at 331.851 231.1979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "220Ω"
+			(at 331.851 233.6221 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 329.184 232.156 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 330.2 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 330.2 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6d58d327-8637-444a-b6d8-f8df1aac941d")
+		)
+		(pin "1"
+			(uuid "5c219b46-0c58-42f2-88e0-9f7f1ff30119")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Filled")
+		(at 274.32 231.14 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "14fc82a0-8fec-49d6-9285-928491674905")
+		(property "Reference" "LED12"
+			(at 280.67 229.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Green"
+			(at 279.4 233.68 90)
+			(effects
+				(font
+					(size 3 3)
+					(bold yes)
+					(color 0 175 0 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 274.32 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 274.32 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 274.32 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b2825d46-38cb-45db-a116-8e85d04dd01a")
+		)
+		(pin "1"
+			(uuid "1f4d12e0-bc1e-483a-af5d-353e5ec6eb6a")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "LED12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 330.2 238.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "14fe3448-b9c7-416d-bfd8-c8b1a58134fa")
+		(property "Reference" "#PWR020"
+			(at 330.2 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDREF"
+			(at 330.2 242.8931 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 330.2 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 330.2 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 330.2 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e0a1783b-a02e-40e3-b2ef-523bcb653129")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 330.2 116.84 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "263aaf33-38c9-4fba-b413-76e2bf8020e7")
+		(property "Reference" "R15"
+			(at 331.851 115.6279 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "220Ω"
+			(at 331.851 118.0521 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 329.184 116.586 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 330.2 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 330.2 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "21f926a6-1cdd-46f0-8f02-0a0da93c545c")
+		)
+		(pin "1"
+			(uuid "47169737-82d9-447e-915b-37ef84d705b1")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Filled")
+		(at 274.32 119.38 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2bfa2b0c-2754-460d-b04a-16363dd1cc40")
+		(property "Reference" "LED9"
+			(at 280.67 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Green"
+			(at 279.4 121.92 90)
+			(effects
+				(font
+					(size 3 3)
+					(bold yes)
+					(color 0 175 0 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 274.32 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 274.32 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 274.32 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7276bd3d-c7de-4859-96d8-f6a4ef501fb0")
+		)
+		(pin "1"
+			(uuid "249023c3-7fac-455e-83a7-c52fa4b16439")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "LED9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Filled")
+		(at 172.72 101.6 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "36a53b5f-fbec-4762-a182-f1d2985b561b")
+		(property "Reference" "LED2"
+			(at 179.07 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Amber"
+			(at 177.8 104.14 90)
+			(effects
+				(font
+					(size 3 3)
+					(bold yes)
+					(color 255 134 14 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 172.72 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 172.72 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 172.72 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ba11e46d-1a17-43b3-8da3-84920047d0af")
+		)
+		(pin "1"
+			(uuid "b9ff5baa-df99-45ee-bc65-f1d501ae8f30")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "LED2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 374.65 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3df2ada4-4d61-439b-84df-13b5cd5bff23")
+		(property "Reference" "#PWR021"
+			(at 374.65 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 374.65 88.5769 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 374.65 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 374.65 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 374.65 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e27deda5-4c78-4c92-888e-0525d4b2369d")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 330.2 99.06 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "41a9e987-0cf2-4b8e-82a9-d7b7e0c8e251")
+		(property "Reference" "R14"
+			(at 331.851 97.8479 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "220Ω"
+			(at 331.851 100.2721 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 329.184 98.806 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 330.2 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 330.2 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "992c4c21-5956-493a-acb5-cb55d2822f1d")
+		)
+		(pin "1"
+			(uuid "f51457be-1fb1-4535-9df6-ef5ee1db24a5")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Filled")
+		(at 313.69 229.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "44e76c4c-e5c5-4d65-be0c-51a794e7f571")
+		(property "Reference" "LED16"
+			(at 313.69 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Green"
+			(at 321.31 237.49 0)
+			(effects
+				(font
+					(size 3 3)
+					(bold yes)
+					(color 0 175 0 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 313.69 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 313.69 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 313.69 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "56c4017d-978a-48d8-85e6-60b80d16aadb")
+		)
+		(pin "1"
+			(uuid "7428747d-2337-4f80-982b-9383956b599f")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "LED16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Filled")
+		(at 313.69 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4723581e-9e9b-4540-9b2f-07559dcac9b1")
+		(property "Reference" "LED14"
+			(at 313.69 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Green"
+			(at 321.31 121.92 0)
+			(effects
+				(font
+					(size 3 3)
+					(bold yes)
+					(color 0 175 0 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 313.69 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 313.69 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 313.69 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ee445477-daf9-43f6-b2dd-686d3c8f825a")
+		)
+		(pin "1"
+			(uuid "e0a22dd9-385f-49fa-99f9-5755b263e150")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "LED14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Filled")
+		(at 172.72 195.58 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "499f1bdc-9004-450e-8322-1bd17b429507")
+		(property "Reference" "LED4"
+			(at 179.07 194.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Red"
+			(at 177.8 198.12 90)
+			(effects
+				(font
+					(size 3 3)
+					(bold yes)
+					(color 255 30 36 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 172.72 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 172.72 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 172.72 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0a7377d3-cce8-43b6-a9fa-62e8e4e730c5")
+		)
+		(pin "1"
+			(uuid "a18a8a9e-905b-405a-abb4-ba2ee732de8b")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "LED4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 274.32 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4b9cf3d1-7542-49f0-9c60-ee7f690084ef")
+		(property "Reference" "#PWR011"
+			(at 274.32 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDREF"
+			(at 274.32 93.0331 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 274.32 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 274.32 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 274.32 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0256f000-3013-4f9e-90e5-842ad5641d57")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 54.61 41.91 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4c2ed351-95a2-4f73-a03c-602740b42e0b")
+		(property "Reference" "SW1"
+			(at 57.15 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Change Lights"
+			(at 55.753 43.1221 90)
+			(effects
+				(font
+					(size 3 3)
+					(bold yes)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm"
+			(at 49.53 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 49.53 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 54.61 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "001d8fe6-a539-4387-877b-5e7c383b3f99")
+		)
+		(pin "2"
+			(uuid "79bd7c05-a9cf-4999-afd5-070bd9fd1644")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 374.65 214.63 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4d5a55ad-da45-418b-984d-c2d7979f04d4")
+		(property "Reference" "SW3"
+			(at 377.19 210.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Ped Cross"
+			(at 375.793 215.8421 90)
+			(effects
+				(font
+					(size 3 3)
+					(bold yes)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm"
+			(at 369.57 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 369.57 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 374.65 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "976cd695-8862-4c1f-9318-e9591a241dc5")
+		)
+		(pin "2"
+			(uuid "cb10bd99-a5ff-44d9-9e82-0ccec20674c4")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 274.32 200.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4e3c772d-f8d9-4cc2-871d-453eac77b2b3")
+		(property "Reference" "#PWR014"
+			(at 274.32 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDREF"
+			(at 274.32 204.7931 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 274.32 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 274.32 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 274.32 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4930a99d-d997-43fa-93cc-bf8c7a7c0f67")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 274.32 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4e6de90e-b985-4f15-9a7d-8131498e4f9c")
+		(property "Reference" "#PWR013"
+			(at 274.32 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDREF"
+			(at 274.32 131.1331 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 274.32 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 274.32 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 274.32 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e824cca7-e5af-44cf-a172-2524c6b2ab69")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 374.65 99.06 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "54abbbb0-bb53-41b7-8492-27435b7ee269")
+		(property "Reference" "SW2"
+			(at 377.19 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Ped Cross"
+			(at 375.793 100.2721 90)
+			(effects
+				(font
+					(size 3 3)
+					(bold yes)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm"
+			(at 369.57 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 369.57 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 374.65 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "49fdfc41-87e8-4efe-8c8b-e5e5f7308121")
+		)
+		(pin "2"
+			(uuid "b2bdd209-3837-4ac4-b173-c4de00c1f25e")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 374.65 208.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5632408a-1238-4c40-ae69-946d7bffd7a6")
+		(property "Reference" "#PWR023"
+			(at 374.65 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 374.65 204.1469 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 374.65 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 374.65 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 374.65 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "483867c6-665f-4112-a4bf-e9ee25976503")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 54.61 57.15 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "58f03425-20e3-402a-a1d0-fe5407034325")
+		(property "Reference" "R1"
+			(at 56.261 55.9379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "220Ω"
+			(at 56.261 58.3621 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 53.594 56.896 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 54.61 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 54.61 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "93482285-c50e-49c6-b722-6d14ad130e41")
+		)
+		(pin "1"
+			(uuid "c3f98023-87e9-48c9-b573-d3345dd125ad")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 162.56 113.03 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5a4bb2b4-d989-41e7-9463-ebeb0bff122f")
+		(property "Reference" "R4"
+			(at 162.56 107.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220Ω"
+			(at 162.56 110.4209 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 162.814 112.014 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 162.56 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c0c231a8-9c07-4492-8dc4-c11534f5abac")
+		)
+		(pin "1"
+			(uuid "1c9436a5-89ff-4e5c-bd16-72ed8ee04045")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 274.32 218.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5ef2168d-f1e4-450e-8693-d6f118427f88")
+		(property "Reference" "#PWR015"
+			(at 274.32 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDREF"
+			(at 274.32 222.5731 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 274.32 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 274.32 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 274.32 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "684abd53-7216-4358-a257-154180395fca")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Filled")
+		(at 274.32 83.82 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "670fd88d-0419-4631-8a46-7dbecfbef402")
+		(property "Reference" "LED7"
+			(at 280.67 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Red"
+			(at 279.4 86.36 90)
+			(effects
+				(font
+					(size 3 3)
+					(bold yes)
+					(color 255 30 36 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 274.32 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 274.32 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 274.32 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a541e097-f6ba-45f8-ab15-b7cf2247d1a3")
+		)
+		(pin "1"
+			(uuid "35e3a4b6-d568-4877-a44f-7cee6f60139b")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "LED7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 54.61 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "685c0762-1164-4a27-b9ad-c5fcc9d8db85")
+		(property "Reference" "#PWR02"
+			(at 54.61 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDREF"
+			(at 54.61 67.6331 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 54.61 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 54.61 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "94e5f58e-2284-4140-8e0a-ce57d6db7fdb")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 172.72 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6b16c342-446d-4f99-896e-05e0fd7e5a55")
+		(property "Reference" "#PWR06"
+			(at 172.72 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDREF"
+			(at 172.72 110.8131 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 172.72 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4db082eb-aabb-4ccc-acd4-2850fb9c02bc")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 172.72 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6dc6b8fa-0458-4a71-ae8b-d60ec7387527")
+		(property "Reference" "#PWR05"
+			(at 172.72 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDREF"
+			(at 172.72 93.0331 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 172.72 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d3248728-1302-46c0-bdd9-f7dc5529fa6c")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 374.65 232.41 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6e3746db-4f32-4d80-907f-47937e373610")
+		(property "Reference" "R19"
+			(at 376.301 231.1979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "220Ω"
+			(at 376.301 233.6221 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 373.634 232.156 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 374.65 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 374.65 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ff86d513-4710-4e21-8c8b-3270542eeb6a")
+		)
+		(pin "1"
+			(uuid "1c66005d-1ce3-4cc2-8672-a983171efd25")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Filled")
+		(at 274.32 195.58 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7261f04a-071c-4995-8cfe-095650685783")
+		(property "Reference" "LED10"
+			(at 280.67 194.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Red"
+			(at 279.4 198.12 90)
+			(effects
+				(font
+					(size 3 3)
+					(bold yes)
+					(color 255 30 36 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 274.32 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 274.32 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 274.32 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "820e9269-ff44-4118-89d8-88d09ba66f57")
+		)
+		(pin "1"
+			(uuid "ab6933c3-2860-42b3-bd96-4bdf10209249")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "LED10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 40.64 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "74d6fd10-93f5-4990-829c-466899d23005")
+		(property "Reference" "#PWR04"
+			(at 40.64 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDREF"
+			(at 40.64 120.9731 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.64 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 40.64 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fd2db32c-aaef-47cd-9e42-561718a66839")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x30")
+		(at 33.02 74.93 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "76ebee1c-9534-4862-8c16-6574f236cd87")
+		(property "Reference" "J1"
+			(at 45.72 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "IDC Header"
+			(at 45.72 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_IDC:IDC-Header_2x15_P2.54mm_Horizontal"
+			(at 33.02 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 33.02 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 33.02 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "2d3d882d-af60-4a94-9a5d-ab8be21f1bdc")
+		)
+		(pin "6"
+			(uuid "5bc4998f-d1de-4657-8c93-c5f2bac98987")
+		)
+		(pin "1"
+			(uuid "6b5f23de-3400-4653-9eab-ddcb1c0e751c")
+		)
+		(pin "25"
+			(uuid "2c7e9066-bbf8-46dc-b572-279f3fe6b3eb")
+		)
+		(pin "24"
+			(uuid "7674e40c-8ee6-4175-a79b-5a8385627c99")
+		)
+		(pin "19"
+			(uuid "54585fa4-9e0c-401f-8d8f-3be5ca537fe9")
+		)
+		(pin "30"
+			(uuid "53b53ee3-4d8f-41c5-98a4-6e77f6a9016a")
+		)
+		(pin "17"
+			(uuid "7ff3e96e-daf7-497c-89f1-5590647ac993")
+		)
+		(pin "9"
+			(uuid "494d01ce-b7ae-4797-9b5d-9463e98595bb")
+		)
+		(pin "15"
+			(uuid "b4e9db62-efd7-47f8-994e-f954e1fbd61e")
+		)
+		(pin "27"
+			(uuid "a40b1d90-5a9b-4c6d-a986-b1e1d478037c")
+		)
+		(pin "14"
+			(uuid "ea253f9d-f444-447c-a98d-c6e1d5ce1a2d")
+		)
+		(pin "28"
+			(uuid "5fe8dee8-e6a1-4a3d-8e7f-b1a453917992")
+		)
+		(pin "2"
+			(uuid "ade4100a-004d-4e78-a797-7542817b246c")
+		)
+		(pin "12"
+			(uuid "cccc8813-265e-4ca2-8f49-83389c2183dd")
+		)
+		(pin "13"
+			(uuid "4f64a828-1393-4bbc-9a53-d2305ef667f3")
+		)
+		(pin "16"
+			(uuid "a8a1d69a-dc8f-497e-a8f8-e92e0d8e508f")
+		)
+		(pin "3"
+			(uuid "63853534-787b-4e2a-8f61-7852f50f3157")
+		)
+		(pin "18"
+			(uuid "0766e088-2dcd-4253-9946-f0671184ea63")
+		)
+		(pin "29"
+			(uuid "0c28dd74-4bb3-46e4-ac88-ee09995fe26f")
+		)
+		(pin "8"
+			(uuid "9f3ce544-38de-4d04-9855-864a8c0667d7")
+		)
+		(pin "20"
+			(uuid "187df6e2-bee2-4fad-8fc7-45778121f8fb")
+		)
+		(pin "11"
+			(uuid "95934b42-82b3-4cbb-ac12-0e4e7b7efcd4")
+		)
+		(pin "23"
+			(uuid "d17876c6-301e-414f-9438-3dd7206e52fc")
+		)
+		(pin "22"
+			(uuid "763e280c-6359-475d-bb3f-ed40adc26fe9")
+		)
+		(pin "4"
+			(uuid "3f520443-413e-420a-8116-47cd336e815e")
+		)
+		(pin "21"
+			(uuid "3e74914c-aaac-416d-a82a-b8ed61ad89bc")
+		)
+		(pin "10"
+			(uuid "3a067280-6912-4f5c-83ea-63af088b0f7c")
+		)
+		(pin "7"
+			(uuid "06549600-25c1-46b1-9aa9-e724de381d89")
+		)
+		(pin "26"
+			(uuid "e3db658e-48a2-487a-8ed3-b8963f4edf53")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 162.56 74.93 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "788bcecc-108e-4c1f-aeb2-4aa2e9518750")
+		(property "Reference" "R2"
+			(at 162.56 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220Ω"
+			(at 162.56 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 162.814 73.914 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 162.56 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6b3d68b9-84ce-4276-aec6-2e3b43221789")
+		)
+		(pin "1"
+			(uuid "d1195895-a13d-44ce-874b-397c076de68e")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 330.2 214.63 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7d098009-4507-44e5-91b2-1d4cea35c4c8")
+		(property "Reference" "R16"
+			(at 331.851 213.4179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "220Ω"
+			(at 331.851 215.8421 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 329.184 214.376 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 330.2 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 330.2 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "63532f43-082d-42c6-aad9-16c68aa12548")
+		)
+		(pin "1"
+			(uuid "26fcc60b-5572-4fd0-885a-8879d6e4f499")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 264.16 207.01 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7e0a4c63-15b7-4e62-b38e-dd340bca9d65")
+		(property "Reference" "R12"
+			(at 264.16 201.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220Ω"
+			(at 264.16 204.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 264.414 205.994 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 264.16 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 264.16 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fdcbbcd3-5238-4f5f-9197-6a060c7ed9ec")
+		)
+		(pin "1"
+			(uuid "7b69eb14-ef32-4b8d-a9a1-ab4930815d46")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 162.56 224.79 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7ea36d7d-577a-4e2e-a2b3-6419115e702b")
+		(property "Reference" "R7"
+			(at 162.56 219.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220Ω"
+			(at 162.56 222.1809 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 162.814 223.774 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 162.56 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "315aa429-8170-4df2-971d-876c54f73fc8")
+		)
+		(pin "1"
+			(uuid "a1977e86-4379-4145-8e46-4553a8344c4d")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 264.16 224.79 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "83d804e0-9751-4931-8746-007ad0512055")
+		(property "Reference" "R13"
+			(at 264.16 219.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220Ω"
+			(at 264.16 222.1809 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 264.414 223.774 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 264.16 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 264.16 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e99c1613-5d97-4fe8-8d72-e7d4f7a0cc6f")
+		)
+		(pin "1"
+			(uuid "3dcb0369-f316-44cd-a11b-17ebe5fa5557")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 374.65 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8e1c5ab8-6867-402b-aa39-8d9d37b7e102")
+		(property "Reference" "#PWR022"
+			(at 374.65 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDREF"
+			(at 374.65 127.3231 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 374.65 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 374.65 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 374.65 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "89a1534b-29f9-448d-9754-2a5000fcfdf6")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 172.72 218.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "90ab6810-88db-4f83-b3e6-1ac58e65bbb7")
+		(property "Reference" "#PWR09"
+			(at 172.72 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDREF"
+			(at 172.72 222.5731 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 172.72 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7512ec06-ea7e-46fe-8aca-873daeba10d7")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Filled")
+		(at 274.32 213.36 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "950223a3-919e-4b36-aa31-3a35a4481951")
+		(property "Reference" "LED11"
+			(at 280.67 212.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Amber"
+			(at 279.4 215.9 90)
+			(effects
+				(font
+					(size 3 3)
+					(bold yes)
+					(color 255 134 14 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 274.32 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 274.32 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 274.32 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f9283a80-e85c-4127-8665-d9e25bc6e1de")
+		)
+		(pin "1"
+			(uuid "abf43f6d-af57-4f31-8b07-a57c97b8945f")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "LED11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 274.32 238.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "996077e9-9cb6-4f48-9235-2ab93581a9cd")
+		(property "Reference" "#PWR016"
+			(at 274.32 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDREF"
+			(at 274.32 242.8931 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 274.32 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 274.32 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 274.32 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2587a3cf-0ada-4676-aafc-265f8a8d6f3e")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 162.56 186.69 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a286f16e-b681-4458-8b17-712467edfe9e")
+		(property "Reference" "R5"
+			(at 162.56 189.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220Ω"
+			(at 162.56 191.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 162.814 185.674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 162.56 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "eb461040-43b5-4077-b676-72ddd2217e30")
+		)
+		(pin "1"
+			(uuid "c00a2cef-f3e5-4f6f-ae43-8b105635efc1")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 172.72 238.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a529addc-8832-475d-9774-31d789f211b9")
+		(property "Reference" "#PWR010"
+			(at 172.72 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDREF"
+			(at 172.72 242.8931 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 172.72 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "de010a82-36ec-4353-b8a4-cd6f5266dd1c")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Filled")
+		(at 172.72 213.36 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a60bce8b-8a4c-44bd-b3f4-841e37f5e75e")
+		(property "Reference" "LED5"
+			(at 179.07 212.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Amber"
+			(at 177.8 215.9 90)
+			(effects
+				(font
+					(size 3 3)
+					(bold yes)
+					(color 255 134 14 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 172.72 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 172.72 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 172.72 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e1a5ba55-cad1-4658-93e7-1481f72621ce")
+		)
+		(pin "1"
+			(uuid "32250e24-5bf1-4ddb-bc2e-c3df8923fd27")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "LED5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 172.72 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a8cac75a-7a8d-4944-85ef-7f3c106ff49c")
+		(property "Reference" "#PWR07"
+			(at 172.72 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDREF"
+			(at 172.72 131.1331 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 172.72 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "14f623c5-c3e0-4010-9639-425430a9c410")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 330.2 208.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aa3b3145-400c-4b53-8f70-a334b9160b9b")
+		(property "Reference" "#PWR019"
+			(at 330.2 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 330.2 204.1469 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 330.2 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 330.2 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 330.2 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eab6cd12-edb1-47f9-9095-2feef0e1c465")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 264.16 74.93 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b0e3855f-0506-43eb-8809-6e23f1f41558")
+		(property "Reference" "R8"
+			(at 264.16 69.8967 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220Ω"
+			(at 264.16 72.3209 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 264.414 73.914 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 264.16 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 264.16 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bf41121d-eb36-441a-b7c9-51a02a70258d")
+		)
+		(pin "1"
+			(uuid "231fd924-d687-4ad3-991b-afe451360544")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Filled")
+		(at 313.69 217.17 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bcac812f-41ca-4279-bd58-53db73189f75")
+		(property "Reference" "LED15"
+			(at 313.69 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Red"
+			(at 308.61 209.55 0)
+			(effects
+				(font
+					(size 3 3)
+					(bold yes)
+					(color 255 30 36 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 313.69 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 313.69 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 313.69 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b9834423-4b8d-4cd7-9ff1-78eaddd65fb7")
+		)
+		(pin "1"
+			(uuid "6ad30b18-af4b-4db3-8f92-407b625a6c85")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "LED15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 274.32 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bd98ad92-0e82-481d-97cf-19a8ff9f6f42")
+		(property "Reference" "#PWR012"
+			(at 274.32 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDREF"
+			(at 274.32 110.8131 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 274.32 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 274.32 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 274.32 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8119dd69-5ea1-48ab-a5a7-aac40eed8e79")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 374.65 116.84 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c0fa708b-90b6-4315-96a1-5e9a9b8eb552")
+		(property "Reference" "R18"
+			(at 376.301 115.6279 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "220Ω"
+			(at 376.301 118.0521 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 373.634 116.586 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 374.65 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 374.65 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e62a903f-8518-4d0e-88f6-fa16fc6eda50")
+		)
+		(pin "1"
+			(uuid "48340046-1f93-42b6-aaf5-c58032de5b86")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Filled")
+		(at 172.72 83.82 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ca3bf9f7-dbec-4c58-9e20-90cec6200f50")
+		(property "Reference" "LED1"
+			(at 179.07 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Red"
+			(at 177.8 86.36 90)
+			(effects
+				(font
+					(size 3 3)
+					(bold yes)
+					(color 255 30 36 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 172.72 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 172.72 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 172.72 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "dfdb318e-6736-40d6-9449-5832e300c7e0")
+		)
+		(pin "1"
+			(uuid "105d6ec6-03b3-4d00-832f-a5fac8707a88")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "LED1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Filled")
+		(at 313.69 101.6 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cc50f145-f6f8-48de-8415-7bad802caccd")
+		(property "Reference" "LED13"
+			(at 313.69 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Red"
+			(at 308.61 93.98 0)
+			(effects
+				(font
+					(size 3 3)
+					(bold yes)
+					(color 255 30 36 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 313.69 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 313.69 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 313.69 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9da5fe16-9a52-4c7c-9ec5-6f1247d32a03")
+		)
+		(pin "1"
+			(uuid "da56650e-cee0-4078-8243-edc7e36c2276")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "LED13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Filled")
+		(at 172.72 231.14 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d16e70a6-f119-4506-bc03-69af854e8254")
+		(property "Reference" "LED6"
+			(at 179.07 229.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Green"
+			(at 177.8 233.68 90)
+			(effects
+				(font
+					(size 3 3)
+					(bold yes)
+					(color 0 175 0 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 172.72 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 172.72 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 172.72 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "96dbfccb-3393-4ecc-ba20-4203dc6adfa9")
+		)
+		(pin "1"
+			(uuid "78ba581a-582f-4597-a751-d65597fdfc37")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "LED6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Filled")
+		(at 274.32 101.6 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d74f2360-8d30-4377-b1bc-e32200932772")
+		(property "Reference" "LED8"
+			(at 280.67 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Amber"
+			(at 279.4 104.14 90)
+			(effects
+				(font
+					(size 3 3)
+					(bold yes)
+					(color 255 134 14 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 274.32 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 274.32 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 274.32 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "837cf165-b9df-46d5-a323-3c1b59813246")
+		)
+		(pin "1"
+			(uuid "ff64bbe1-ca7a-4c33-bff9-0473d49213c3")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "LED8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 330.2 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "da7dbb7e-0b69-4c92-9231-30ca716498f8")
+		(property "Reference" "#PWR018"
+			(at 330.2 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDREF"
+			(at 330.2 127.3231 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 330.2 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 330.2 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 330.2 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9e71f11d-e0e0-4a4d-9a34-157ebd3f5e1d")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 264.16 95.25 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e39729e3-fc95-49e3-b0ed-a01693446dc2")
+		(property "Reference" "R9"
+			(at 264.16 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220Ω"
+			(at 264.16 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 264.414 94.234 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 264.16 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 264.16 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c00f975f-57fb-4345-b9d4-c67b5a5ac88f")
+		)
+		(pin "1"
+			(uuid "aa1ec886-b350-4f07-bd12-87f4f270c0f3")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 162.56 95.25 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ec5927fd-def0-40e7-87e3-1f2230ca7596")
+		(property "Reference" "R3"
+			(at 162.56 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220Ω"
+			(at 162.56 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 162.814 94.234 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 162.56 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b43a26b7-6b75-4ea2-b0a5-837cfde7b335")
+		)
+		(pin "1"
+			(uuid "e094d93b-b130-4b52-9dd9-7cf131560693")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 330.2 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f8f5bb14-80c5-420a-a877-7759bbcb6ce1")
+		(property "Reference" "#PWR017"
+			(at 330.2 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 330.2 88.5769 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 330.2 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 330.2 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 330.2 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "523633a9-fa1d-4b1f-8477-6ebdc94c2d34")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 172.72 200.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fc85c256-4bbb-4b6e-ad42-360210de8b3e")
+		(property "Reference" "#PWR08"
+			(at 172.72 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDREF"
+			(at 172.72 204.7931 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 172.72 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1d78a49f-6a87-43ec-855a-2f012a15c865")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 374.65 238.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fdc3b955-a0e1-4e5c-acfa-ab4c70c40394")
+		(property "Reference" "#PWR024"
+			(at 374.65 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDREF"
+			(at 374.65 242.8931 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 374.65 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 374.65 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 374.65 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5c30c3ed-3d9e-4273-a0e6-0f87b633bbf6")
+		)
+		(instances
+			(project "PicoXpander - Traffic Lights"
+				(path "/a82e9316-ffb7-4dc0-873b-4e707b2a0d0e"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
