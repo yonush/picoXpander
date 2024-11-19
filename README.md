@@ -23,7 +23,7 @@ There are seven boards identified for the kit with three of them already designe
 - :white_large_square: 16x8 LED display
 - :white_large_square: Breakout & passthrough board
 - :white_large_square: Multiple sensor board
-
+- :white_large_square: Motor/Servo driver board
 
 ### The picoXpander driver board
 
@@ -71,8 +71,9 @@ A board to simulate a elevator with 3 floors.
 Contains a 16x9 Charlieplexed LED matrix to present a very simple display driven by the rather convenient IS31FL3731 LED display chip.
 
 - 16x9 LEDs (colour yet to be determined)
-- 4 way button joystick
-- 2 additional buttons for interaction
+- 1x 4 way button joystick
+- 2x additional buttons for interaction
+- 1x Haptic feedback motor
 
 *Design currently under development.*
 
@@ -84,17 +85,35 @@ This board can either be attach to the driver board or between the driver board 
 
 ### Multiple sensor board
 
-This board contains several common sensors and a a couple of RGB LEDs
+This board contains several common sensors and a a couple of RGB LEDs. Starting with the smart sensor BME688. It is an air quality sensor can measure gas, temperature, pressure and humiditthe first gas sensor with Artificial Intelligence  
 
 Sensor list
+
 - Light sensor
 - Sound
+- Air quality
 - Temperature
 - Humidity
 - Motion
 - Pressure
 
 *Design currently under development.*
+
+### Motor/Servo driver board
+
+This board will have a motor driver for two motors to let you attach the pixoXpander to a chassi
+
+- 1x H-bridge motor driver, with built-in short circuit, over current and thermal protection.
+- [alt] DRV8833 motor driver using I2C - 1A per motor
+- [alt] MX1508 motor driver using PWM - 1.5A per motor
+- 2x motors or 1x stepper
+- Uses external power with on board charger for a battery
+- 4x servo outputs
+- power switch for the external power
+
+*Design currently under development.*
+
+
 
 ## Demo code
 
