@@ -12,6 +12,9 @@ Pinout used by the picoXpander and picoPLC
 
 ![pinout](images/pinout.png)
 
+Support has been added to work with the Adafruit Blinka platform.
+
+
 ## The boards in brief
 
 There are seven boards identified for the kit with three of them already designed and tested with the other four in progress
