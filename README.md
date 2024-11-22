@@ -52,7 +52,7 @@ This simulates 4 way crossing with a pedestrian light for two of the roads.
 - No external power required.
 
 ![traffic](images/traffic.png)
-![Traffic](images/Traffic.png)
+![Traffic](images/TrafficCrossing.png)
 
 ### 8bit Digital IO board
 
@@ -60,7 +60,7 @@ A simple board the maps against the 8 digital inputs and 8 digital outputs. The 
 
 
 ![8bitIO](images/digiIO.png)
-![8bitIO](images/IOboard.png)
+![8bitIO](images/IOboard.jpg)
 
 ### Three floor elevator
 
