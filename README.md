@@ -1,4 +1,5 @@
-# Tangible Learning for IoT and Automation ... in a Lunchbox - the picoXpander
+# Tangible Learning for IoT and Automation ... 
+in a Lunchbox - the picoXpander
 
 This repo is the design files and sample code for the picoXpander kit. It is kit that leverages the Raspberry pico boards (RP2040 & RP2350) as a controller along with various IO boards the connect up using a short ribbon cable. The goal of this kit was to use simple technology to make an interesting electronics kit for teaching at a very affordable price. The focus of the learning is on the programming and understanding logic. This reduces the reliance on the connection and wiring up of individual components which take more time to get right. 
 
@@ -39,6 +40,7 @@ This board contains a socket for the Pico which also provision for direct solder
 - The I2C can be remapped to "network" two boards using the UART.
 
 ![driver](images/driver.png)
+![driver](images/DriverBoard.png)
 
 ### Traffic crossing
 
@@ -49,7 +51,8 @@ This simulates 4 way crossing with a pedestrian light for two of the roads.
 - 16 LEDs arrange as 3 per intersection. opposite traffic lights are tied together
 - No external power required.
 
-![8bitIO](images/traffic.png)
+![traffic](images/traffic.png)
+![Traffic](images/Traffic.png)
 
 ### 8bit Digital IO board
 
@@ -57,6 +60,7 @@ A simple board the maps against the 8 digital inputs and 8 digital outputs. The 
 
 
 ![8bitIO](images/digiIO.png)
+![8bitIO](images/IOboard.png)
 
 ### Three floor elevator
 
