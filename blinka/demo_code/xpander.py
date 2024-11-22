@@ -14,7 +14,7 @@ import time
 try:
     if (not "uname" in dir(os)) and os.name == 'nt':
         import platform
-        
+
         isEmbedded = False
         os.environ["BLINKA_U2IF"] = "1"
         sys.path.insert(0, os.path.abspath('./lib'))
@@ -63,6 +63,11 @@ class Xpander:
     TX = board.TX 
     RX = board.RX
     
+    OLEDw = 128
+    OLEDh = 64
+    OLEDlines = 6 # lines of text on the OLED
+    OLEDdata = [""] * OLEDlines
+
     def __init__(self):
         self.LED:digitalio.DigitalInOut = digitalio.DigitalInOut(board.LED)
         self.LED.direction = digitalio.Direction.OUTPUT
@@ -89,7 +94,7 @@ class Xpander:
         self.setI2C()
         self.setSPI()
         self.setUART()
-        self.setOLED(128,64)
+        self.setOLED(self.OLEDw,self.OLEDh)
 
     def setSPI(self):
         """
@@ -163,7 +168,7 @@ class Xpander:
             self.IX6:digitalio.DigitalInOut = self.GPIN[6]
             self.IX7:digitalio.DigitalInOut = self.GPIN[7]
 
-    def setOLED(self,W:int,H:int):
+    def setOLED(self,W:int = 128,H:int = 64):
         """
             Initialiase the OLED on the I2C\n 
             SH1106 OLED with 128x64 resolution
@@ -177,6 +182,39 @@ class Xpander:
         except:
             self.OLED = None    
             print("No OLED attached")
+    """
+    def OLEDtext(self,line:int,strs:list):
+        if not self.OLED: return 
+        if not isinstance(strs,list): return        
+        if line in (0,1,2,3,4,5):
+            self.OLED.fill(False)
+            for i in range(5):
+                #try:
+                 if len(strs[i]) > 0:
+                    self.OLEDdata[i] = strs[i]
+                    self.OLED.text(strs[i],0,line * 10,1)
+                #except: 
+                #    return
+            self.OLED.show()        
+    """
+
+    # display 1 or more lines of text from a list onto the OLED
+    def display(self,strs:list):
+        if not self.OLED: return 
+        if not isinstance(strs,list): return        
+        if len(strs) > self.OLEDlines:
+            strs = strs[:self.OLEDlines]
+        self.OLED.fill(False)
+        for k,v in enumerate(strs):
+            try:
+                # save updated line
+                if len(v) > 0:
+                    self.OLEDdata[k] = v
+                self.OLED.text(self.OLEDdata[k],0,k * 10,1)
+            except: 
+                return
+        self.OLED.show()        
+
 
     def testOLED(self):
         """
