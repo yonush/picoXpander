@@ -3,3 +3,4 @@ debug*
 /tmp
 *.exe
 ignore
+__pycache__
