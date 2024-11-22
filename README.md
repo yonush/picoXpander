@@ -19,14 +19,14 @@ Support has been added to work with the Adafruit Blinka platform.
 
 There are seven boards identified for the kit with three of them already designed and tested with the other four in progress
 
-1 :white_check_mark: Raspberry Pico driver board
-1 :white_check_mark: Traffic light crossing
-1 :white_check_mark: 8bit digital I/O
-1 :white_large_square: Three floor elevator
-1 :white_large_square: 16x8 LED display
-1 :white_large_square: Breakout & passthrough board
-1 :white_large_square: Multiple sensor board
-1 :white_large_square: Motor/Servo driver board
+- :white_check_mark: Raspberry Pico driver board
+- :white_check_mark: Traffic light crossing
+- :white_check_mark: 8bit digital I/O
+- :white_large_square: Three floor elevator
+- :white_large_square: 16x8 LED display
+- :white_large_square: Breakout & passthrough board
+- :white_large_square: Multiple sensor board
+- :white_large_square: Motor/Servo driver board
 
 ### The picoXpander driver board
 
