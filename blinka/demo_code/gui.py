@@ -2,14 +2,14 @@
      Simple GUI example using the basic guizero Python package
      https://lawsie.github.io/guizero/
 """
-import guizero as gz
-import xpander as IO
 import threading
 import time
 
+import guizero as gz
+import xpander as IO
 
 io = IO.Xpander()
-io.init()
+io.init_all()
 app = gz.App(layout="grid")
 
 """
@@ -37,7 +37,7 @@ def Polling():
                 if io.GPIN[i].value:
                     waffle[i,0].color = "green"
                     LEDS[i].bg = "green"
-                    buttons = f"{i}"
+                    buttons += f"{i} "
                 else:
                     waffle[i,0].color = "red"
                     LEDS[i].bg = "red"   
@@ -70,13 +70,18 @@ def evtStart():
 def evtButton(event_data):
     # get the button that was pressed
     b:gz.PushButton = event_data.widget
+    # check which leds are lit and add to the list
+    guib = ""
+    for i in range(8):
+        if io.GPOUT[i].value:
+            guib += f"{i} "
+    io.display([str(f"GUI {guib}"),"","","","",""])
+
     #  convert the button number into the IO address
     #led = eval(f"io.QX{b.text}")
     led = io.GPOUT[int(b.text)]
     # toggle the led on the board
     led.value = not led.value
-
-    io.display([str(f"Gui Button {b.text}"),"","","","",""])
     # change the button background based on led state
     if led.value:
         b.bg = "Green"
