@@ -86,7 +86,7 @@ Contains a 16x9 Charlieplexed LED matrix to present a very simple display driven
 
 ### Breakout & passthrough board
 
-This board can either be attach to the driver board or between the driver board and another board. It provides the IO passthrough but also a header to allow you to attach dupont leads. A small breadboard is also attached to let you add components not found on the fixed function boards. A 6pin header has been added to provide connectivity for 2 small servos such as the [MG90S](https://components101.com/motors/mg90s-metal-gear-servo-motor) and the [SG90](https://components101.com/motors/servo-motor-basics-pinout-datasheet).
+This board can either be attach to the driver board or between the driver board and another board. It provides the IO passthrough but also a header to allow you to attach dupont leads. A small breadboard is also attached to let you add components not found on the fixed function boards. A 6pin header has been added to provide connectivity for two small servos such as the [MG90S](https://components101.com/motors/mg90s-metal-gear-servo-motor) and the [SG90](https://components101.com/motors/servo-motor-basics-pinout-datasheet).
 
 ![breakout](images/breakout.jpg)
 
