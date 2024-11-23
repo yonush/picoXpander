@@ -13,8 +13,18 @@ Pinout used by the picoXpander and picoPLC
 
 ![pinout](images/pinout.png)
 
-Support has been added to work with the Adafruit Blinka platform.
 
+### Using Blinka from Adafruit
+
+Support has been added to work with the Adafruit Blinka platform with some caveats. IN order to match the above pinout and work with the piocPLC there were several changes made to the Adafruit Blinka module. With a summary of the changes below. A more detailed writeup can be found in the [readme](blinka/READ.me) for the picoXpander blinka distribution.
+
+**Changes made to adafruit_blinka module**
+The picoXpander driver board uses an off the shelf Raspberry Pico device which means there were no changes made to the USB HID (device VID) settings. We modified the existing rp2040_u2if driver as follows and are working on a separate driver.
+
+- src\busio.py (add suport for UART - wip)
+- src\adafruit_blinka\board\pico_u2if.py (updated pin map)
+- src\adafruit_blinka\microcontroller\rp2040_u2if\i2c.py (updated pin map for I2C - channel 0 GPOP0 & GPIO1)
+- src\adafruit_blinka\microcontroller\rp2040_u2if\uart.py (copied from rp2040 - wip)
 
 ## The boards in brief
 
