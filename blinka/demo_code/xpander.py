@@ -4,6 +4,7 @@
     the picoXpander and picoPLC
     
     I/O mapping file as per the diagram Pico-OpenPLC-A4-Pinout.pdf
+    version 0.0.2
 '''
 import os
 import sys
@@ -23,7 +24,6 @@ except:
     isEmbedded = True
     print("Using Circuitpython/Micropython")
 
-#import adafruit_ssd1306
 # Make sure a pico is attached before tryning to use the library
 try: 
     import analogio
@@ -31,7 +31,10 @@ try:
     import busio
     import digitalio
     import pwmio
-    import sh1106       
+
+    import sh1106  # works for the ssd1306 driver chips too
+
+    #import adafruit_ssd1306
 except:
     print("ERR: No Raspberry Pico with U2IF firmware attached")
     exit()
@@ -71,67 +74,89 @@ class Xpander:
     def __init__(self):
         self.LED:digitalio.DigitalInOut = digitalio.DigitalInOut(board.LED)
         self.LED.direction = digitalio.Direction.OUTPUT
-        self.QW0 = pwmio.PWMOut(board.GP5, duty_cycle=0, frequency=1000, variable_frequency=True)
-        self.QW1 = pwmio.PWMOut(board.GP4, duty_cycle=0, frequency=1000, variable_frequency=True)
-        self.AOUT0 = self.PWM0 = self.QW0
-        self.AOUT1 = self.PWM1 = self.QW1
         self.IW0 = self.ADC0 = analogio.AnalogIn(board.ADC0)
-        self.IW1 =  self.ADC1 = analogio.AnalogIn(board.ADC1)        
+        self.IW1 =  self.ADC1 = analogio.AnalogIn(board.ADC1)     
+        self.AOUT0 = self.PWM0 = self.QW0 = None
+        self.AOUT1 = self.PWM1 = self.QW1 = None   
         if isEmbedded:            
             # has issues under Blinka
             self.IW2 =  self.ADC2 = analogio.AnalogIn(board.ADC2)
 
-        self.UART = self.I2C = self.OLED = self.SPI = None
-        
+        # assume no peripherals are set or attached
+        self.UART = self.I2C = self.OLED = self.SPI = None        
         self.setGPIO()
 
-    # 
-    def init(self):
-        """
-            Initialiase the peripheral interfaces as a group\n
+    def init_all(self):
+        """ Initialiase the peripheral interfaces as a group
+
             I2C, SPI, UART, OLED
         """
         self.setI2C()
-        self.setSPI()
+ #       self.setSPI()
         self.setUART()
+        self.setPWM() # default to 1KHz
         self.setOLED(self.OLEDw,self.OLEDh)
 
-    def setSPI(self):
+    def setPWM(self,freq=1000):
+        """ Initialise the PWM frequency and IO pins
+
+            Both channels are set at the same time as they share the same PWM slice.
         """
-            Initialiase the SPI on GP2,GP3,GP4,GP5
+        if not self.QW0 is None:
+            self.QW0.deinit()
+        if not self.QW1 is None:
+            self.QW1.deinit()
+
+        print(f"Initialising PWM to {freq}Hz on GP{board.AOUT0.id} & GP{board.AOUT1.id}")    
+        try:
+            self.QW0 = pwmio.PWMOut(board.AOUT0, duty_cycle=0, frequency=freq, variable_frequency=True)
+            self.QW1 = pwmio.PWMOut(board.AOUT1, duty_cycle=0, frequency=freq, variable_frequency=True)
+        except:
+            print("Error setting the PWM to {freq}Hz on GP{board.AOUT0.id} & GP{board.AOUT1.id}")
+            self.AOUT0 = self.PWM0 = self.QW0 = None
+            self.AOUT1 = self.PWM1 = self.QW1 = None
+            return
+        self.AOUT0 = self.PWM0 = self.QW0
+        self.AOUT1 = self.PWM1 = self.QW1
+
+
+    def setSPI(self):
+        """ Initialiase the SPI on GP2,GP3,GP4,GP5
         """
         pass
 
     def setI2C(self):    
+        """ Initialise the I2C on GP0,GP1 @ 400KHz
         """
-            Initialiase the I2C on GP0,GP1 @ 400KHz
-        """
-
+        print(f"Initialising the I2C on GP{board.SCL.id},GP{board.SDA.id} @ 400KHz")
         try:
             self.I2C = busio.I2C(self.SCL, self.SDA, frequency=400_000)
-            while not self.I2C.try_lock(): pass
-            print("I2C addresses found:", [hex(device_address) for device_address in self.I2C.scan()])
+            poll = 0
+            while not self.I2C.try_lock() and poll < 10: poll += 1
+            print("I2C addresses found:", [hex(device_address) for device_address in self.I2C.scan()])   
             self.I2C.unlock()
+
         except:
             self.I2C = None
             print("No I2C device attached")
     
-    def setUART(self):    
+    def setUART(self,baud=115200):    
+        """ Initialiase the UART on GP4,GP5 @ 115200 baud
         """
-            Initialiase the UART on GP4,GP5 @ 115200 baud
-        """
-
+        print(f"Initialising UART to {baud} baud on GP{board.TX.id} & GP{board.RX.id}")            
         try:
             self.UART = busio.UART(self.TX,self.RX, baudrate=115200, timeout=1)
         except:
             print("No UART capability found")
             self.UART = None   
+        
     
     def setGPIO(self):    
-        """
-            Initialiase the I/O on GP6-GP13 for input ant GP14-GP21 for output\n
-            IX0-IX7 for inputs\n
-            QX0-QX7 for outputs\n
+        """ Initialiase the I/O on GP6-GP13 for input and GP14-GP21 for output
+            
+            IX0-IX7 for inputs
+            
+            QX0-QX7 for outputs
         """
 
         # ----- define the inputs and outputs
@@ -141,6 +166,7 @@ class Xpander:
         opins = [board.GP14, board.GP15, board.GP16, board.GP17, 
                 board.GP18, board.GP19, board.GP20, board.GP21]
         
+        print(f"Initialising the GPIO on GP6-GP13 for input and GP14-GP21 for output")
         for v in range(8):    
             # create output pins
             self.GPOUT[v] = digitalio.DigitalInOut(opins[v])
@@ -167,16 +193,20 @@ class Xpander:
             self.IX5:digitalio.DigitalInOut = self.GPIN[5]
             self.IX6:digitalio.DigitalInOut = self.GPIN[6]
             self.IX7:digitalio.DigitalInOut = self.GPIN[7]
+        
 
     def setOLED(self,W:int = 128,H:int = 64):
-        """
-            Initialiase the OLED on the I2C\n 
+        """ Initialiase the OLED on the I2C
             SH1106 OLED with 128x64 resolution
+        Args:
+            W (int): OLED width in pixels. default 128
+            H (int): OLED height in pixels. default 64
         """
 
         if not self.I2C: return
         if not self.OLED is None:
             del self.OLED
+        print(f"Initialising the {W}xGP{H} OLED on I2C0")                     
         try:
             self.OLED = sh1106.SH1106_I2C(W, H, self.I2C, addr=0x3c)    
         except:
@@ -200,6 +230,11 @@ class Xpander:
 
     # display 1 or more lines of text from a list onto the OLED
     def display(self,strs:list):
+        """Send 1-6 strings to the OLED display assuming the 128x64 device
+
+        Args:
+            strs (list): List of 1-6 strings
+        """
         if not self.OLED: return 
         if not isinstance(strs,list): return        
         if len(strs) > self.OLEDlines:
@@ -217,8 +252,7 @@ class Xpander:
 
 
     def testOLED(self):
-        """
-            Print a test message on the OLED
+        """ Print a test message on the OLED
         """
 
         if not self.I2C: 
@@ -232,9 +266,36 @@ class Xpander:
         self.OLED.text("Version 1.0", 0, 20, 1)
         self.OLED.show()
 
+    def map_range(self,value:int, in_min:int, in_max:int, out_min:int, out_max:int)->int:
+        """ Map a value from one range to another
+
+        Args:
+            value (int): value to map
+            in_min (int): low end of from range
+            in_max (int): upper end of from range
+            out_min (int): low end of to range
+            out_max (int): upper end of to range
+
+        Returns:
+            int: mapped integer
+        """
+        return (value - in_min) * (out_max - out_min) // (in_max - in_min) + out_min
+
+    def map_range_zero(self,value:int, in_max:int, out_max:int)->int:
+        """ Map a value from one range to another assuming the ranges start at 0
+
+        Args:
+            value (int): value to map
+            in_max (int): upper end of from range
+            out_max (int): upper end of to range
+
+        Returns:
+            int: mapped integer
+        """
+        return value * out_max // in_max
+
 def pollOut(PLC:Xpander,delay:float):
-    """
-        Test the Outputs 
+    """ Test the Outputs 
     """    
     for i in range(8):        
         PLC.GPOUT[i].value = True
@@ -242,8 +303,7 @@ def pollOut(PLC:Xpander,delay:float):
         PLC.GPOUT[i].value = False
 
 def pollIn(PLC:Xpander,delay:float):
-    """
-        Test the inputs
+    """ Test the inputs
     """    
 
     toggle = False
@@ -266,9 +326,9 @@ def pollIn(PLC:Xpander,delay:float):
 # diagnostics test code
 if __name__ == "__main__":
     PLC = Xpander()
-    PLC.init()
+    PLC.init_all()
     PLC.testOLED()
-   
+    time.sleep(1)
     flag = True
     while True:
 
