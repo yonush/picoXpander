@@ -101,6 +101,9 @@ You can add the following code to the top of your program
     import os
     os.environ["BLINKA_U2IF"] = "1"
 
+**TODO: update Adafruit_Python_PlatformDetect**
+Need to update the above module to support a new environment variable "BLINKA_U2IF_XPANDER". This will allow us to use the exisiting *adafruit-blinka* but with the picoXpander added as a new board rather than breaking the existing rp2040_u2if.
+
 ### Step 2 - Prepare the Pico
 
 The pico requires a custom firmware that configures the I/O and waits for commands from the computer. The commands are sent over USB.

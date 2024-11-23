@@ -35,7 +35,7 @@ There are seven boards identified for the kit with three of them already designe
 - :white_check_mark: 8bit digital I/O
 - :white_large_square: Three floor elevator
 - :white_large_square: 16x8 LED display
-- :white_large_square: Breakout & passthrough board
+- :white_check_mark: Breakout & passthrough board
 - :white_large_square: Multiple sensor board
 - :white_large_square: Motor/Servo driver board
 
