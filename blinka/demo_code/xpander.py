@@ -31,6 +31,7 @@ try:
     import busio
     import digitalio
     import pwmio
+    import neopixel_write
 
     import sh1106  # works for the ssd1306 driver chips too
 
@@ -235,6 +236,7 @@ class Xpander:
         Args:
             strs (list): List of 1-6 strings
         """
+        
         if not self.OLED: return 
         if not isinstance(strs,list): return        
         if len(strs) > self.OLEDlines:
@@ -266,6 +268,35 @@ class Xpander:
         self.OLED.text("Version 1.0", 0, 20, 1)
         self.OLED.show()
 
+
+    def RGBon(self,buffer):
+        """ Turn on an array of WS2812b/Neopixels
+            Up to 16 GRB leds support
+        
+        Args:
+            buffer (list): 16 x 3 GRB byte values
+        """
+
+        # 16 x 3 GRB 
+        if len(buffer) > 48: return
+        # clip large values
+        for i in range(len(buffer)):
+            buffer[i] = buffer[i] & 0xFF
+
+        neopixel_write.neopixel_write(self.ONEWIRE,buffer)
+
+    def RGBoff(self):
+        """ Turn off the WS281b leds - up to 16 of them
+        
+        Args:
+            None
+        Return:
+            None    
+        """
+
+        buffer = [0] * 48
+        neopixel_write.neopixel_write(self.ONEWIRE,buffer)
+
     def map_range(self,value:int, in_min:int, in_max:int, out_min:int, out_max:int)->int:
         """ Map a value from one range to another
 
@@ -279,6 +310,7 @@ class Xpander:
         Returns:
             int: mapped integer
         """
+
         return (value - in_min) * (out_max - out_min) // (in_max - in_min) + out_min
 
     def map_range_zero(self,value:int, in_max:int, out_max:int)->int:
@@ -292,6 +324,7 @@ class Xpander:
         Returns:
             int: mapped integer
         """
+
         return value * out_max // in_max
 
 def pollOut(PLC:Xpander,delay:float):
