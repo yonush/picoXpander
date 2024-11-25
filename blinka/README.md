@@ -3,16 +3,11 @@
 The Blinka code and firmware lets you use microcontrollers to provide the external IO for a computer. Python code is written on the computer and IO instructions are sent to the device over USB. This will work with the picoXpander using a customised version of the Raspberry Pico firmware and a modded version of the Adafruit Blinka Python libraries.
 
 ## TODO
-- :white_check_mark: Get OLED working
-- :white_check_mark: Rewrite iomapping
-- :white_check_mark: Test the xpander.py with the picoPLC
-- :white_large_square: Redraw the pinout image for picoXpander layout
-- :white_large_square: Fix UART - convert from hid to hidapi package
-- :white_large_square: Test PWM and write test code
-- :white_large_square: Update documentation
-- :white_large_square: Write code for traffic light board
-- :white_large_square: Include more demo code
-- :white_large_square: Write up on changes to the various packages
+- Redraw the pinout image for picoXpander layout
+- Fix UART - convert from hid to hidapi package
+- Update documentation
+- Write code for traffic light board
+- Write up on changes to the various packages
 
 ## Programming languages & environment
 
@@ -51,7 +46,7 @@ Basically any language that can work on the Raspberry Pico is suitable for this 
 - GP0,GP1 - I2C
 - GP4,GP5 - UART (still under development)
 - GP2,GP3 - PWM %QW0,%QW1
-- GP22 - 1-wire
+- GP22 - 1-wire (DHT, Dallas, WS2812b, etc)
 - GP26,GP27, GP28 ADC %IW0-%IW2
 - GP6-GP13 - %IX0.0-%IX0.7
 - GP14-GP21 - %IX0.7-%IX0.0
@@ -59,6 +54,18 @@ Basically any language that can work on the Raspberry Pico is suitable for this 
 GP0,1 is reserved for I2C
 GP4,5 can be used for the UART to connect two boards in a "network"
 GP2,3,4,5,22,26,27,28 can be remapped for some boards and the breakout board
+
+## Demos
+- xpander.py - the main library 
+- blinka_test.py - check if the blinka setup is working
+- ball.py - bounce a ball on the OLED
+- LED_tests v1.py - scroll through the board LEDS
+- LED_tests v2.py - test the 8bitio board (leds & buttons)
+- rgb_pixels.py - test the ws2812b/neopixel interface
+- gui.py - using guizero to show gui interaction with the kit
+- PWM_tests v1.py - test the PWM channels (assuming a servo or led is attached)
+- PWM_tests v2.py - drive a PWM pin from an analog input (assuming a servo and LDR are attached)
+- usb_check.py - short USB check for the custom U2IF firmware
 
 ## Pico preparation for Python and U2IF
 
@@ -86,7 +93,9 @@ The *Adafruit_Blinka_picoXpander* has been modified to support the functionality
 
 - src\busio.py (add suport for UART - wip)
 - src\adafruit_blinka\board\pico_u2if.py (updated pin map)
+- src\adafruit_blinka\microcontroller\rp2040_u2if\rp2040_u2if (line 404 should be gpio.id)
 - src\adafruit_blinka\microcontroller\rp2040_u2if\i2c.py (updated pin map for I2C - channel 0 GPOP0 & GPIO1)
+- src\adafruit_blinka\microcontroller\rp2040_u2if\spi.py (updated pin map for SPI)
 - src\adafruit_blinka\microcontroller\rp2040_u2if\uart.py (copied from rp2040 - wip)
 
 
@@ -100,9 +109,6 @@ You can add the following code to the top of your program
 
     import os
     os.environ["BLINKA_U2IF"] = "1"
-
-**TODO: update Adafruit_Python_PlatformDetect**
-Need to update the above module to support a new environment variable "BLINKA_U2IF_XPANDER". This will allow us to use the exisiting *adafruit-blinka* but with the picoXpander added as a new board rather than breaking the existing rp2040_u2if.
 
 ### Step 2 - Prepare the Pico
 

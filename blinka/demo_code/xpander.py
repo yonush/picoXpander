@@ -113,7 +113,7 @@ class Xpander:
             self.QW0 = pwmio.PWMOut(board.AOUT0, duty_cycle=0, frequency=freq, variable_frequency=True)
             self.QW1 = pwmio.PWMOut(board.AOUT1, duty_cycle=0, frequency=freq, variable_frequency=True)
         except:
-            print("Error setting the PWM to {freq}Hz on GP{board.AOUT0.id} & GP{board.AOUT1.id}")
+            print(f"Error setting the PWM to {freq}Hz on GP{board.AOUT0.id} & GP{board.AOUT1.id}")
             self.AOUT0 = self.PWM0 = self.QW0 = None
             self.AOUT1 = self.PWM1 = self.QW1 = None
             return
@@ -124,7 +124,9 @@ class Xpander:
     def setSPI(self):
         """ Initialiase the SPI on GP2,GP3,GP4,GP5
         """
-        pass
+        #print(f"Initialising SPI to GP{board.SPI_CS.id}, GP{board.SPI0_TX.id} & GP{board.SPI0_RX.id}")            
+        self.SPI_CS = digitalio.DigitalInOut(self.SPI_CS)
+        self.SPI = busio.SPI(self.SPI_SCK, MOSI=self.SPI_TX, MISO=self.SPI_RX)
 
     def setI2C(self):    
         """ Initialise the I2C on GP0,GP1 @ 400KHz
