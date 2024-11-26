@@ -93,7 +93,7 @@ class Xpander:
             I2C, SPI, UART, OLED
         """
         self.setI2C()
- #       self.setSPI()
+        self.setSPI()
         self.setUART()
         self.setPWM() # default to 1KHz
         self.setOLED(self.OLEDw,self.OLEDh)
@@ -260,7 +260,7 @@ class Xpander:
         """
 
         if not self.I2C: 
-            self.setOLED(128,64)
+            self.setOLED(self.OLEDw,self.OLEDh)
             #self.OLED = adafruit_ssd1306.SSD1306_I2C(128, 64, self.I2C) # 0.96" OLED
         if not self.OLED: return 
 

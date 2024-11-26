@@ -62,6 +62,7 @@ GP2,3,4,5,22,26,27,28 can be remapped for some boards and the breakout board
 - LED_tests v1.py - scroll through the board LEDS
 - LED_tests v2.py - test the 8bitio board (leds & buttons)
 - rgb_pixels.py - test the ws2812b/neopixel interface
+- MAX7219.py - test the SPI using the MAX7219 LED matrix
 - gui.py - using guizero to show gui interaction with the kit
 - PWM_tests v1.py - test the PWM channels (assuming a servo or led is attached)
 - PWM_tests v2.py - drive a PWM pin from an analog input (assuming a servo and LDR are attached)
