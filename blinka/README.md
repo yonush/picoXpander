@@ -43,19 +43,22 @@ Basically any language that can work on the Raspberry Pico is suitable for this 
 
 ## I/O mapping for Blinka and OpenPLC with the picoXpander
 
-- GP0,GP1 - I2C
-- GP4,GP5 - UART (still under development)
-- GP2,GP3 - PWM %QW0,%QW1
+- GP0,GP1 - I2C0
+- GP2, GP3, GP4, GP5 - SPI0
+- GP4,GP5 - UART1 (still under development)
+- GP2,GP3 - PWM/Analog out as %QW0,%QW1 in OpenPLC 
 - GP22 - 1-wire (DHT, Dallas, WS2812b, etc)
-- GP26,GP27, GP28 ADC %IW0-%IW2
-- GP6-GP13 - %IX0.0-%IX0.7
-- GP14-GP21 - %IX0.7-%IX0.0
+- GP26,GP27, GP28 ADC as %IW0-%IW2 in OpenPLC
+- GP6-GP13 - Inputs as %IX0.0-%IX0.7 in OpenPLC
+- GP14-GP21 - Outputs as %IX0.7-%IX0.0 in OpenPLC
 
-GP0,1 is reserved for I2C
+GP2-4 can be used with SPI but not at the same time with the I2C and UART
 GP4,5 can be used for the UART to connect two boards in a "network"
 GP2,3,4,5,22,26,27,28 can be remapped for some boards and the breakout board
 
 ## Demos
+
+Refer to the demos below on how to use the Xpander boards 
 - xpander.py - the main library 
 - blinka_test.py - check if the blinka setup is working
 - ball.py - bounce a ball on the OLED
@@ -114,9 +117,7 @@ You can add the following code to the top of your program
 ### Step 2 - Prepare the Pico
 
 The pico requires a custom firmware that configures the I/O and waits for commands from the computer. The commands are sent over USB.
-Use this firmware [picoXpander U2IF FW](firmware/) to prepare the pico. This is a modified version of the **adafruit_u2if** to support the alternate pin layout used by the picoXpander.
-
-The firmware has only been compiled for the Raspberry Pico 1. The Raspberry Pico W and Raspberry Pico 2 are still under development.
+Use the firmware in this folder [picoXpander U2IF FW](firmware/) to prepare the pico. They have been compiled to support the Pico, Pico W, Pico 2, Pico 2 W and mapped for the picoXpander interfaces. This is a modified version of the **adafruit_u2if** to support the alternate pin layout used by the picoXpander.
 
 ### Step 3 - Testing the setup
 
