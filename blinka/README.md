@@ -114,7 +114,7 @@ You can add the following code to the top of your program
 ### Step 2 - Prepare the Pico
 
 The pico requires a custom firmware that configures the I/O and waits for commands from the computer. The commands are sent over USB.
-Use this firmware [picoXpander_u2if.uf2](firmware/picoXpander_u2if.uf2) to prepare the pico. This is a modified version of the **adafruit_u2if** to support the alternate pin layout used by the picoXpander.
+Use this firmware [picoXpander U2IF FW](firmware/) to prepare the pico. This is a modified version of the **adafruit_u2if** to support the alternate pin layout used by the picoXpander.
 
 The firmware has only been compiled for the Raspberry Pico 1. The Raspberry Pico W and Raspberry Pico 2 are still under development.
 
