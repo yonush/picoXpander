@@ -4,15 +4,17 @@
     the picoXpander and picoPLC
     
     I/O mapping file as per the diagram Pico-OpenPLC-A4-Pinout.pdf
-    version 0.0.2
+    version 0.0.5
 '''
+
 import os
 import sys
 import time
 
 # this environmental variable must be set, either in the code or from a terminal
-#  otherwise the U2IF device will not be detected
+#  otherwise the U2IF device will not be detected for blinka
 try:
+    # This only works under blinka, ignore otherwise 
     if (not "uname" in dir(os)) and os.name == 'nt':
         import platform
 
@@ -30,11 +32,11 @@ try:
     import board
     import busio
     import digitalio
-    import pwmio
     import neopixel_write
+    import pwmio
 
-    import sh1106  # works for the ssd1306 driver chips too
-
+    # check setOLED() for the contextual loading of the imports
+    #import sh1106  # works for the ssd1306 driver chips with 64 height too
     #import adafruit_ssd1306
 except:
     print("ERR: No Raspberry Pico with U2IF firmware attached")
@@ -67,7 +69,8 @@ class Xpander:
     TX = board.TX 
     RX = board.RX
     
-    OLEDw = 128
+    # OLED settings
+    OLEDw = 128  # assumed and not used
     OLEDh = 64
     OLEDlines = 6 # lines of text on the OLED
     OLEDdata = [""] * OLEDlines
@@ -88,21 +91,30 @@ class Xpander:
         self.setGPIO()
 
     def init_all(self):
-        """ Initialiase the peripheral interfaces as a group
+        """ Initialiase the peripheral interfaces together
 
             I2C, SPI, UART, OLED
         """
+
         self.setI2C()
         self.setSPI()
-        self.setUART()
+        self.setUART() # default 115200 baud
         self.setPWM() # default to 1KHz
-        self.setOLED(self.OLEDw,self.OLEDh)
+        self.setOLED() # default height 64 pixels
 
     def setPWM(self,freq=1000):
-        """ Initialise the PWM frequency and IO pins
-
+        """ Initialise the PWM frequency and IO pins\n
             Both channels are set at the same time as they share the same PWM slice.
+
+        Args:
+            freq (int): set the PWM frequency 10 (10HZ) - 1_000_000 (1MHz)
         """
+        try:
+            freq = int(freq)
+        except:
+            return
+                    
+        if freq < 10 or freq > 1_000_000: return
         if not self.QW0 is None:
             self.QW0.deinit()
         if not self.QW1 is None:
@@ -120,13 +132,16 @@ class Xpander:
         self.AOUT0 = self.PWM0 = self.QW0
         self.AOUT1 = self.PWM1 = self.QW1
 
-
     def setSPI(self):
         """ Initialiase the SPI on GP2,GP3,GP4,GP5
         """
-        #print(f"Initialising SPI to GP{board.SPI_CS.id}, GP{board.SPI0_TX.id} & GP{board.SPI0_RX.id}")            
+        print(f"Initialising SPI to GP{board.SCLK.id}, GP{board.MISO.id} & GP{board.MOSI.id}")            
         self.SPI_CS = digitalio.DigitalInOut(self.SPI_CS)
-        self.SPI = busio.SPI(self.SPI_SCK, MOSI=self.SPI_TX, MISO=self.SPI_RX)
+        try:
+            self.SPI = busio.SPI(self.SPI_SCK, MOSI=self.SPI_TX, MISO=self.SPI_RX)
+        except:
+            print("No SPI devices found")
+            self.SPI = None   
 
     def setI2C(self):    
         """ Initialise the I2C on GP0,GP1 @ 400KHz
@@ -145,20 +160,26 @@ class Xpander:
     
     def setUART(self,baud=115200):    
         """ Initialiase the UART on GP4,GP5 @ 115200 baud
+            default to 8N1 and no flow control
+
+        Args:
+            baud (int): UART baud rate 75 to 128000
         """
-        print(f"Initialising UART to {baud} baud on GP{board.TX.id} & GP{board.RX.id}")            
+        print(f"Initialising UART to {baud} baud on GP{board.TX.id} & GP{board.RX.id}") 
+        if not isinstance(baud,int): return
+        # range based off windows COM settings          
+        if not baud in (75, 110, 134, 150, 200, 300, 600, 1200, 1800, 2400, 4800, 7200,
+                         9600, 14400, 19200, 38400, 57600, 115200,128000):
+            return
         try:
             self.UART = busio.UART(self.TX,self.RX, baudrate=115200, timeout=1)
         except:
             print("No UART capability found")
             self.UART = None   
-        
-    
+            
     def setGPIO(self):    
-        """ Initialiase the I/O on GP6-GP13 for input and GP14-GP21 for output
-            
-            IX0-IX7 for inputs
-            
+        """ Initialiase the I/O on GP6-GP13 for input and GP14-GP21 for output\n
+            IX0-IX7 for inputs\n            
             QX0-QX7 for outputs
         """
 
@@ -198,38 +219,30 @@ class Xpander:
             self.IX7:digitalio.DigitalInOut = self.GPIN[7]
         
 
-    def setOLED(self,W:int = 128,H:int = 64):
+    def setOLED(self,is32:bool = False):
         """ Initialiase the OLED on the I2C
-            SH1106 OLED with 128x64 resolution
+            SH1106 OLED with 128x64 resolution. 
+            Supports the 0.96", 1.54" or 2.42" OLED with pixel heigh 64\n            
+            0.91" with pixel height 32 uses the adafruit_SSD1306 driver.
         Args:
-            W (int): OLED width in pixels. default 128
-            H (int): OLED height in pixels. default 64
+            is32 (bool): True for 32 pixel heigh. default False
         """
-
         if not self.I2C: return
         if not self.OLED is None:
             del self.OLED
-        print(f"Initialising the {W}xGP{H} OLED on I2C0")                     
+        print(f"Initialising the 128x{32 if is32 else 64} OLED on I2C0")                     
+        
+        # only import the relevant OLED driver based on the OLED pixel height
         try:
-            self.OLED = sh1106.SH1106_I2C(W, H, self.I2C, addr=0x3c)    
+            if is32:
+                import adafruit_ssd1306
+                self.OLED = adafruit_ssd1306.SSD1306_I2C(128, 32, self.I2C, addr=0x3c)    
+            else: 
+                import sh1106
+                self.OLED = sh1106.SH1106_I2C(128, 64, self.I2C, addr=0x3c)    
         except:
             self.OLED = None    
             print("No OLED attached")
-    """
-    def OLEDtext(self,line:int,strs:list):
-        if not self.OLED: return 
-        if not isinstance(strs,list): return        
-        if line in (0,1,2,3,4,5):
-            self.OLED.fill(False)
-            for i in range(5):
-                #try:
-                 if len(strs[i]) > 0:
-                    self.OLEDdata[i] = strs[i]
-                    self.OLED.text(strs[i],0,line * 10,1)
-                #except: 
-                #    return
-            self.OLED.show()        
-    """
 
     # display 1 or more lines of text from a list onto the OLED
     def display(self,strs:list):
@@ -247,7 +260,7 @@ class Xpander:
         for k,v in enumerate(strs):
             try:
                 # save updated line
-                if len(v) > 0:
+                if isinstance(v,str) and len(v) > 0:
                     self.OLEDdata[k] = v
                 self.OLED.text(self.OLEDdata[k],0,k * 10,1)
             except: 
@@ -258,10 +271,8 @@ class Xpander:
     def testOLED(self):
         """ Print a test message on the OLED
         """
-
         if not self.I2C: 
-            self.setOLED(self.OLEDw,self.OLEDh)
-            #self.OLED = adafruit_ssd1306.SSD1306_I2C(128, 64, self.I2C) # 0.96" OLED
+            self.setOLED()            
         if not self.OLED: return 
 
         self.OLED.fill(False)
@@ -273,17 +284,24 @@ class Xpander:
 
     def RGBon(self,buffer):
         """ Turn on an array of WS2812b/Neopixels
-            Up to 16 GRB leds support
+            Up to 16 GRB leds supported. 
+            Board driver can support up to 1000
         
         Args:
             buffer (list): 16 x 3 GRB byte values
         """
 
         # 16 x 3 GRB 
-        if len(buffer) > 48: return
-        # clip large values
+        if not isinstance(buffer,list): return
+        # clip the buffer
+        if len(buffer) > 48: 
+            buffer = buffer[:48]
+        # clip large values to 1byte
         for i in range(len(buffer)):
-            buffer[i] = buffer[i] & 0xFF
+            if isinstance(buffer[i],int):
+                buffer[i] = buffer[i] & 0xFF
+            else:
+                buffer[i] = 0                
 
         neopixel_write.neopixel_write(self.ONEWIRE,buffer)
 
@@ -313,6 +331,9 @@ class Xpander:
             int: mapped integer
         """
 
+        if not isinstance(value,int): return
+        if not(isinstance(in_min,int) and isinstance(in_max,int)): return        
+        if not(isinstance(out_min,int) and isinstance(out_max,int)): return
         return (value - in_min) * (out_max - out_min) // (in_max - in_min) + out_min
 
     def map_range_zero(self,value:int, in_max:int, out_max:int)->int:
@@ -327,41 +348,44 @@ class Xpander:
             int: mapped integer
         """
 
+        if not(isinstance(value,int) and isinstance(in_max,int) and isinstance(out_max,int)): return
         return value * out_max // in_max
-
-def pollOut(PLC:Xpander,delay:float):
-    """ Test the Outputs 
-    """    
-    for i in range(8):        
-        PLC.GPOUT[i].value = True
-        time.sleep(delay)
-        PLC.GPOUT[i].value = False
-
-def pollIn(PLC:Xpander,delay:float):
-    """ Test the inputs
-    """    
-
-    toggle = False
-    # scan through the inputs
-    for i in range(8):                
-        # if the input is high toggle the out twice
-        if PLC.GPIN[i].value:
-            PLC.GPOUT[i].value = True
-            time.sleep(delay)
-            PLC.GPOUT[i].value = False
-            time.sleep(delay)
-            PLC.GPOUT[i].value = True
-            time.sleep(delay)
-            PLC.GPOUT[i].value = False
-            toggle = True
-            time.sleep(delay)
-
-    return toggle
 
 # diagnostics test code
 if __name__ == "__main__":
+    def pollOut(PLC:Xpander,delay:float):
+        """ Test the Outputs 
+        """    
+        for i in range(8):        
+            PLC.GPOUT[i].value = True
+            time.sleep(delay)
+            PLC.GPOUT[i].value = False
+
+    def pollIn(PLC:Xpander,delay:float):
+        """ Test the inputs
+        """    
+
+        toggle = False
+        # scan through the inputs
+        for i in range(8):                
+            # if the input is high toggle the out twice
+            if PLC.GPIN[i].value:
+                PLC.GPOUT[i].value = True
+                time.sleep(delay)
+                PLC.GPOUT[i].value = False
+                time.sleep(delay)
+                PLC.GPOUT[i].value = True
+                time.sleep(delay)
+                PLC.GPOUT[i].value = False
+                toggle = True
+                time.sleep(delay)
+
+        return toggle
+
     PLC = Xpander()
     PLC.init_all()
+    # if the 0.96", 1.54" or 2.42" OLED is used then the height is default 64
+    #PLC.setOLED(H=32)
     PLC.testOLED()
     time.sleep(1)
     flag = True
