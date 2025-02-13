@@ -1,6 +1,5 @@
 from xpander import Xpander
 
-PLC = Xpander()
 
 # Helper function to draw a circle from a given position with a given radius
 # This is an implementation of the midpoint circle algorithm,
@@ -29,6 +28,7 @@ def circle(xpos0, ypos0, rad, col=1):
             dx += 2
             err += dx - (rad << 1)
 
+
 center_x = 63
 center_y = 15
 x_inc = 4
@@ -37,12 +37,16 @@ radius = 4
 
 
 if __name__ == "__main__":
-    PLC.init()
+    PLC = Xpander()
     PLC.setOLED()
-
-    PLC.OLED.fill(0)
-    PLC.OLED.show()
-
+    PLC.testOLED()
+    
+    try:
+        PLC.OLED.fill(0)
+        PLC.OLED.show()
+    except:
+        print("Error: Could not initialize OLED display")
+        exit()
     while True:
         # undraw the previous circle
         circle(center_x, center_y, radius, col=0)

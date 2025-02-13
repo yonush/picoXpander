@@ -23,24 +23,18 @@ Example output for the Pico with the xpander version of the firmware installed
     vendor_id, 51966
 """
 
-print("Opening the Pico")
+print("-" * 40)  # spacer
+
+print("Opening a connection to the Raspberry Pico")
 dev = hid.device()
-dev.open(0xcafe, 0x4005) # Raspberry Pico devices
-
-
-print(f"Manufacturer: {dev.get_manufacturer_string()}")
-print(f"Product: {dev.get_product_string()}")
-print(f"Serial No: {dev.get_serial_number_string()}")
-dev.close()
-
-"""
 try:
-    while True:
-        data = dev.read(64)
-        if data:
-            print(f"read: {data}")
+    dev.open(0xCAFE, 0x4005)  # Raspberry Pico devices
+    print(f"Manufacturer: {dev.get_manufacturer_string()}")
+    print(f"Product: {dev.get_product_string()}")
+    print(f"Serial No: {dev.get_serial_number_string()}")
+except:
+    print("-- Unable to open the Raspberry Pico device - exiting")
+    exit()
 finally:
-    print("Closing the device")
+    print("Closing the Raspberry Pico device device")
     dev.close()
-
-"""    
