@@ -95,6 +95,7 @@ class Xpander:
         self.UART = self.I2C = self.OLED = self.SPI = None
         self.setGPIO()
 
+
     def init_all(self):
         """Initialiase the peripheral interfaces together
 
