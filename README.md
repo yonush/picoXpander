@@ -4,7 +4,7 @@ This repo is the design files and sample code for the picoXpander kit. It is kit
 
 The Lunch box idea idea was create boards that are small enough to fit into a 1L box (about 160L x 113W x 90H mm in size. Like this one from [Living & Co.](https://www.thewarehouse.co.nz/p/living-co-storage-container-rectangle-assorted-1l/R2039528.html)), including the cable. This meant it was easy to keep the kit together and carry around. The 1L box has enough room to fit about 6-7 boards and the USB cable. An example of the lunch with three boards, cable and infomation card can be seen below.
 
-![lunchbox](images/the_lunch_box.jpg)
+![lunchbox](images/the_lunch_box.png)
 
 ## Software
 
