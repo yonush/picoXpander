@@ -6,7 +6,7 @@ The Lunch box idea idea was create boards that are small enough to fit into a 1L
 
 ## Software
 
-The kit IO layout was arranged to match the [picoPLC](https://github.com/yonush/PicoPLC) arrangement so that you can write your applications using [OpenPLC](https://autonomylogic.com/). This does not mean you cant remap them when using CircuitPython, Micropython or C/C++.
+The kit IO layout was arranged to match the [picoPLC](https://github.com/yonush/PicoPLC) pinout so that you can write your applications using [OpenPLC](https://autonomylogic.com/), CircuitPython, Micropython or C/C++, Python (with Blinka), TinyGo, Nim and Assemnby if you wish. Basically anything that can run on the Raspberyr Pico would work.
 
 Pinout used by the picoXpander and picoPLC
 
