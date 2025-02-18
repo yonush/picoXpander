@@ -69,14 +69,15 @@ A simple board the maps against the 8 digital inputs and 8 digital outputs. The 
 ![8bitIO](images/digiIO.png)
 ![8bitIO](images/IOboard.jpg)
 
-### Three floor elevator
+### Four floor elevator
 
 A board to simulate a elevator with 3 floors.
 
 - 1 button for each floor to call the elevator 
 - 2 LEDs to indicate elevator traveling up or down
-- 3 buttons for the inside of the elevator
-- 4-8 LEDs in a box to represent the elevator at each floor
+- 4 buttons for the inside of the elevator
+- 4 LEDs in a box to represent the elevator at each floor
+- 1 Analog input for the floor feedback (resistor network)
 
 *Design currently under development.*
 
