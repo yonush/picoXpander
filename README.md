@@ -71,7 +71,7 @@ A simple board the maps against the 8 digital inputs and 8 digital outputs. The 
 
 ### Four floor elevator
 
-A board to simulate a elevator with 3 floors.
+A board to simulate a elevator with four floors.
 
 - 1 button for each floor to call the elevator 
 - 2 LEDs to indicate elevator traveling up or down
